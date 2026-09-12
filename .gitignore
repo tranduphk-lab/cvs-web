@@ -1,0 +1,21 @@
+# Archives & Large files (>100MB GitHub limit)
+*.rar
+*.zip
+*.7z
+*.tar.gz
+Cavisi/Cavisi_BrandIdentity/
+cavisi-website_2.zip
+
+# Word / Office temporary lock files
+~$*
+*.tmp
+
+# Logs & System files
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node dependencies & environment
+node_modules/
+.env

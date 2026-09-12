@@ -1,0 +1,40 @@
+# Cavisi trust-first website
+
+Website giới thiệu thương hiệu Cavisi với mục tiêu chính là tạo uy tín, giúp người đọc hiểu sản phẩm và kiểm tra trạng thái thông tin.
+
+## Chạy tại local
+
+```powershell
+python -m http.server 4173 --directory D:\Cavisi_web\_web
+```
+
+Mở `http://127.0.0.1:4173`.
+
+## Cấu trúc 7 trang
+
+- `index.html`: Homepage định vị Scalp-first, vai trò Shampoo/Spray, cách dùng, nguyên tắc giao tiếp và FAQ.
+- `co-che/index.html`: Khoa học hệ vi sinh da đầu, sơ đồ 3D hai bước Rinse-off & Leave-on, Postbiotic men vỏ liễu.
+- `san-pham/index.html`: Danh mục bộ đôi sản phẩm Cavisi Microbiome Care.
+- `san-pham/shampoo/index.html`: Chi tiết Cavisi Shampoo 250ml, bảng INCI, hoạt chất chính, quy trình gội.
+- `san-pham/spray/index.html`: Chi tiết Cavisi Spray 30ml, bảng INCI, Zinc PCA, màng bảo vệ 24h.
+- `thuong-hieu/index.html`: Câu chuyện thương hiệu, triết lý Science × Nature, nhà máy Butter-C.
+- `lien-he/index.html`: Kênh liên lạc trực tiếp (Hotline, Zalo, Email), nhà máy và form tư vấn trực tuyến.
+- `styles.css`: Hệ thống thiết kế typography Inter thanh lịch, responsive và motion.
+- `script.js`: Scroll reveal, sticky header, menu mobile, FAQ accordion và contact form.
+- `assets/`: Logo, font chữ, hình Before/After, hình insight vấn đề da đầu, sơ đồ cơ chế 3D và packshot sản phẩm.
+
+## Quy tắc nội dung
+
+- Không dùng ảnh AI Before/After như bằng chứng.
+- Không dùng claim điều trị, hiệu quả định lượng hoặc tiêu chuẩn chưa có tài liệu.
+- Phân biệt nguồn về thành phẩm, nguyên liệu và kiến thức khoa học nền.
+- Hai số tiếp nhận hiện mang trạng thái `Thông tin thương hiệu cung cấp` cho đến khi bản phiếu gốc được đối chiếu.
+- TNPCB Shampoo: `28338/26/CBMP-HN`.
+- TNPCB Spray: `28222/26/CBMP-HN`.
+- Mã/tệp TCCS và hồ sơ kiểm nghiệm thành phẩm hiện chưa có trong bộ nguồn website.
+
+## Trước khi production
+
+- Đối chiếu nhãn, phiếu công bố và INCI cuối của từng sản phẩm.
+- Xác nhận pháp nhân chịu trách nhiệm, hotline, Zalo và email chính thức.
+- Chỉ chuyển trạng thái sang `Đã đối chiếu` khi đã kiểm tra tài liệu gốc.
