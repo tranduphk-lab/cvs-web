@@ -1,0 +1,18 @@
+interface:
+  display_name: prompt architect
+  short_description: Build, upgrade, audit, and adapt high-quality prompts from rough
+    user requests. Use when the user asks to write, improve, standardize, optimize,
+    structure, or convert a prompt for Claude, Claude Code, Codex, ChatGPT, Gemini,
+    coding agents, research agents, automation, marketing, design, DevOps, APIs, data
+    work, or other AI workflows. Converts vague requests into layered prompts with
+    appropriate context, scope, constraints, risk controls, execution protocol, verification,
+    and output contracts while avoiding unnecessary prompt bloat.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

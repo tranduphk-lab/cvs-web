@@ -1,0 +1,4 @@
+interface:
+  display_name: "Action By Du"
+  short_description: "Chuẩn hóa phản hồi thành hành động rõ ràng"
+  default_prompt: "Dùng Action By Du để hiểu yêu cầu sửa đổi, chuẩn hóa, thực thi và xác minh kết quả."

@@ -104,3 +104,27 @@ if (scrollTopBtn) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
+
+// Product Showcase Gallery Thumbnail Switcher
+const thumbButtons = document.querySelectorAll('.thumb-btn');
+thumbButtons.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const parent = btn.closest('.product-showcase-visual');
+    if (!parent) return;
+    const mainImg = parent.querySelector('.gallery-main img');
+    const newSrc = btn.getAttribute('data-src');
+    const newAlt = btn.getAttribute('aria-label') || '';
+    if (!mainImg || !newSrc || mainImg.getAttribute('src') === newSrc) return;
+
+    parent.querySelectorAll('.thumb-btn').forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    mainImg.classList.add('fade');
+    setTimeout(() => {
+      mainImg.src = newSrc;
+      if (newAlt) mainImg.alt = newAlt;
+      mainImg.classList.remove('fade');
+    }, 150);
+  });
+});
+
