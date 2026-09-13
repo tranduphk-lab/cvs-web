@@ -160,16 +160,42 @@ section[id],article[id]{scroll-margin-top:calc(var(--header) + 18px)}
 
 /* 03 / Khoa học & Cơ chế */
 .mechanism{background:#fff}
-.mechanism-stage{margin-top:46px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,59,80,.06)}
-.mechanism-visual{position:relative;background:#032938;overflow:hidden}
-.mechanism-visual img{width:100%;height:auto;display:block}
-.mechanism-step-visual{display:none;margin-bottom:20px;border-radius:8px;overflow:hidden;border:1px solid var(--line);box-shadow:0 4px 14px rgba(0,59,80,.08)}
-.mechanism-step-visual img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.mechanism-stage{margin-top:46px;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(0,59,80,.06)}
+.mechanism-visual{position:relative;background:#032938;overflow:hidden;cursor:pointer}
+.mechanism-visual img{width:100%;height:auto;display:block;transition:transform .4s ease}
+.mechanism-visual:hover img{transform:scale(1.015)}
+.mechanism-visual .zoom-hint{position:absolute;bottom:16px;right:16px;background:rgba(0,40,55,.85);backdrop-filter:blur(8px);color:#fff;font-size:11px;font-weight:650;letter-spacing:.04em;padding:6px 14px;border-radius:20px;display:flex;align-items:center;gap:6px;border:1px solid rgba(255,255,255,.2);box-shadow:0 4px 14px rgba(0,0,0,.2);pointer-events:none;transition:all .2s ease}
+
+.mechanism-step-visual{display:none;position:relative;margin-bottom:20px;border-radius:10px;overflow:hidden;border:1px solid var(--line);box-shadow:0 4px 14px rgba(0,59,80,.08);background:#032938;cursor:pointer}
+.mechanism-step-visual img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;transition:transform .35s ease}
+.mechanism-step-visual:hover img{transform:scale(1.02)}
+.mechanism-step-visual .zoom-hint{position:absolute;bottom:10px;right:10px;background:rgba(0,40,55,.88);backdrop-filter:blur(6px);color:#fff;font-size:10px;font-weight:700;letter-spacing:.04em;padding:5px 10px;border-radius:16px;display:flex;align-items:center;gap:5px;border:1px solid rgba(255,255,255,.25);box-shadow:0 3px 10px rgba(0,0,0,.25);pointer-events:none}
+
+/* Micro-points chi tiết cơ chế cho Mobile & Desktop */
+.mechanism-micro-points{display:grid;grid-template-columns:1fr;gap:10px;margin:20px 0 24px;padding:16px;background:linear-gradient(135deg,rgba(238,248,244,.7),rgba(244,248,246,.95));border:1px solid rgba(91,200,181,.3);border-radius:10px}
+.micro-point{display:flex;align-items:flex-start;gap:12px}
+.micro-icon{flex:0 0 28px;height:28px;border-radius:50%;background:#ffffff;border:1px solid rgba(91,200,181,.4);display:flex;align-items:center;justify-content:center;font-size:13px;box-shadow:0 2px 6px rgba(0,50,70,.06)}
+.micro-info{display:flex;flex-direction:column;gap:2px}
+.micro-info strong{font-size:13px;color:var(--blue);font-weight:700;line-height:1.35}
+.micro-info span{font-size:12px;color:var(--muted);line-height:1.45}
 
 @media(max-width:768px){
   .mechanism-visual{display:none}
-  .mechanism-step-visual{display:block}
+  .mechanism-step-visual{display:block;width:100%;max-width:220px;margin:0 auto 16px auto;border-radius:12px;border:1px solid var(--line);box-shadow:0 4px 14px rgba(0,50,70,.08)}
+  .mechanism-step-visual img{aspect-ratio:1/1;width:100%;height:auto}
+  .mechanism-step-visual .zoom-hint{bottom:8px;right:8px;font-size:9px;padding:4px 8px}
+  .mechanism-micro-points{margin:14px 0 16px;padding:10px 12px;gap:8px;border-radius:8px}
+  .micro-point{gap:10px}
+  .micro-icon{flex:0 0 22px;height:22px;font-size:11px}
+  .micro-info strong{font-size:12px}
+  .micro-info span{font-size:11px}
+  .mechanism-step{padding:22px 18px !important}
+  .mechanism-step h3{font-size:21px}
+  .step-role{margin-bottom:12px;font-size:12px}
+  .step-features{gap:8px}
+  .step-features li{font-size:13px;line-height:1.5}
 }
+
 .mechanism-columns{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);background:#fafcfa}
 .mechanism-step{padding:38px 42px}
 .mechanism-step+.mechanism-step{border-left:1px solid var(--line)}
@@ -658,9 +684,9 @@ section[id],article[id]{scroll-margin-top:calc(var(--header) + 18px)}
   .principle-card.has-media{padding:0}
   .principle-card span{font-size:12px;margin-bottom:4px}
   .principle-card h3,.responsibility-grid h3,.legend-card h3{margin:12px 0 6px}
-  .product-grid,.routine-grid,.compare-grid,.parting-pair,.problem-grid,.mechanism-columns,.contact-form-grid{grid-template-columns:1fr !important;gap:36px !important}
+  .product-grid,.routine-grid,.compare-grid,.parting-pair,.problem-grid,.contact-form-grid{grid-template-columns:1fr !important;gap:36px !important}
+  .mechanism-columns{grid-template-columns:1fr !important;gap:0 !important}
   .mechanism-step+.mechanism-step{border-left:0;border-top:1px solid var(--line)}
-  .mechanism-step{padding:26px 20px}
   .product-showcase{grid-template-columns:1fr !important;gap:32px !important}
   .product-showcase-visual{min-height:auto !important;padding:0 !important}
   .information-head{gap:8px}
@@ -702,7 +728,9 @@ section[id],article[id]{scroll-margin-top:calc(var(--header) + 18px)}
   .status-badge{font-size:9px}
   .compare-content{padding:18px}
   .problem-body{padding:18px}
-  .mechanism-step h3{font-size:22px}
+  .mechanism-step-visual{max-width:200px}
+  .mechanism-step{padding:20px 16px !important}
+  .mechanism-step h3{font-size:20px}
 }
 
 @media(prefers-reduced-motion:reduce){
@@ -716,3 +744,21 @@ section[id],article[id]{scroll-margin-top:calc(var(--header) + 18px)}
   .hero h1 em,.evidence-hero h1 em{display:inline}
   .hero-lead,.evidence-hero-copy>p{max-width:100%;overflow-wrap:anywhere}
 }
+
+/* Image Zoom Lightbox Modal */
+.image-modal{position:fixed;inset:0;z-index:9999;display:none;opacity:0;transition:opacity .25s ease;align-items:center;justify-content:center;padding:16px}
+.image-modal.active{display:flex;opacity:1}
+.image-modal-backdrop{position:absolute;inset:0;background:rgba(2,24,34,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);cursor:zoom-out}
+.image-modal-content{position:relative;z-index:2;max-width:min(1200px,96vw);max-height:92vh;display:flex;flex-direction:column;align-items:center;animation:modalScaleIn .25s cubic-bezier(.2,.9,.3,1)}
+.image-modal-figure{display:flex;flex-direction:column;align-items:center;width:100%}
+.image-modal-img{max-width:100%;max-height:80vh;object-fit:contain;border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.15)}
+.image-modal-caption{margin-top:14px;color:#fff;font-size:13px;font-weight:600;text-align:center;max-width:700px;line-height:1.5;background:rgba(0,40,55,.75);backdrop-filter:blur(6px);padding:8px 18px;border-radius:20px;border:1px solid rgba(255,255,255,.12)}
+.image-modal-close{position:absolute;top:-48px;right:0;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:24px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s ease;padding:0;line-height:1}
+.image-modal-close:hover{background:rgba(255,255,255,.9);color:var(--blue);transform:scale(1.08)}
+body.modal-open{overflow:hidden}
+
+@keyframes modalScaleIn{
+  from{transform:scale(.92);opacity:0}
+  to{transform:scale(1);opacity:1}
+}
+

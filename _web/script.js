@@ -284,3 +284,71 @@ if (homeTrack) {
   });
 }
 
+// Global Image Zoom Lightbox Controller
+(function initImageModal() {
+  let modal = document.getElementById('image-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'image-modal';
+    modal.className = 'image-modal';
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.setAttribute('aria-hidden', 'true');
+    modal.innerHTML = `
+      <div class="image-modal-backdrop"></div>
+      <div class="image-modal-content">
+        <button class="image-modal-close" type="button" aria-label="Đóng">&times;</button>
+        <div class="image-modal-figure">
+          <img class="image-modal-img" id="image-modal-img" src="" alt="">
+          <p class="image-modal-caption" id="image-modal-caption"></p>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+  }
+
+  const modalImg = modal.querySelector('#image-modal-img');
+  const modalCaption = modal.querySelector('#image-modal-caption');
+  const closeBtn = modal.querySelector('.image-modal-close');
+  const backdrop = modal.querySelector('.image-modal-backdrop');
+
+  function openModal(src, caption) {
+    if (!modalImg) return;
+    modalImg.src = src;
+    modalImg.alt = caption || 'Chi tiết sơ đồ 3D y khoa';
+    if (modalCaption) {
+      modalCaption.textContent = caption || '';
+      modalCaption.style.display = caption ? 'block' : 'none';
+    }
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+    if (modalImg) modalImg.src = '';
+  }
+
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (backdrop) backdrop.addEventListener('click', closeModal);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  // Attach click listener to all zoomable mechanism elements
+  document.querySelectorAll('[data-zoom-src]').forEach((el) => {
+    el.addEventListener('click', () => {
+      const src = el.getAttribute('data-zoom-src');
+      const caption = el.getAttribute('data-zoom-caption') || el.querySelector('img')?.getAttribute('alt') || '';
+      if (src) openModal(src, caption);
+    });
+  });
+})();
+
+
