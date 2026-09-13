@@ -7,7 +7,9 @@
   <meta name="description" content="Cavisi Shampoo 250ml — Công thức làm sạch dịu nhẹ với Salicylic Acid (BHA), Climbazole, Hexamidine và Postbiotic men vỏ liễu. Đạt chuẩn công bố CBMP-HN.">
   <link rel="canonical" href="https://cavisi.vn/san-pham/shampoo/">
   <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
-  <link rel="apple-touch-icon" href="../../assets/cavisi-logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
 
   <!-- Open Graph / Facebook / Zalo -->
   <meta property="og:type" content="product">
@@ -101,27 +103,61 @@
     <section class="products section-pad" style="background:#fff;">
       <div class="product-showcase">
         <div class="product-showcase-visual reveal">
-          <div class="gallery-main">
-            <img src="../../assets/shampoo-box-cutout.webp" alt="Bộ đôi chai dầu gội Cavisi Shampoo 250ml và hộp sản phẩm" loading="lazy">
+          <div class="product-slider-container">
+            <div class="product-slider-track" aria-label="Bộ sưu tập ảnh Cavisi Shampoo">
+              <div class="product-slide studio-slide" data-index="0">
+                <img src="../../assets/shampoo-box-cutout.webp" alt="Bộ đôi chai dầu gội Cavisi Shampoo 250ml và hộp sản phẩm" loading="eager" fetchpriority="high">
+              </div>
+              <div class="product-slide" data-index="1">
+                <img src="../../assets/cavisi-playful-hug.jpg" alt="Mái tóc bồng bềnh cùng trải nghiệm làm sạch thoáng với Cavisi" loading="lazy">
+              </div>
+              <div class="product-slide" data-index="2">
+                <img src="../../assets/cavisi-shower-flatlay.jpg" alt="Bối cảnh phòng tắm thư giãn và giọt nước thanh khiết" loading="lazy">
+              </div>
+              <div class="product-slide" data-index="3">
+                <img src="../../assets/shampoo-texture.jpg" alt="Kết cấu gel vi sinh trong suốt và bọt xốp mịn màng" loading="lazy">
+              </div>
+              <div class="product-slide studio-slide" data-index="4">
+                <img src="../../assets/shampoo.webp" alt="Cận cảnh chai Cavisi Shampoo 250ml với vòi nhấn tiện dụng" loading="lazy">
+              </div>
+              <div class="product-slide" data-index="5">
+                <img src="../../assets/cavisi-duo-water.jpg" alt="Bộ đôi Cavisi Shampoo &amp; Spray trên bệ đá cẩm thạch" loading="lazy">
+              </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button class="slider-nav-btn prev" type="button" aria-label="Xem ảnh trước">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class="slider-nav-btn next" type="button" aria-label="Xem ảnh tiếp theo">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+
+            <!-- Counter Badge -->
+            <div class="slider-counter" aria-live="polite">
+              <span class="counter-current">1</span> / <span class="counter-total">6</span>
+            </div>
           </div>
+
+          <!-- Thumbnails Strip -->
           <div class="gallery-thumbs" role="tablist" aria-label="Bộ sưu tập ảnh sản phẩm Cavisi Shampoo">
-            <button class="thumb-btn active" data-src="../../assets/shampoo-box-cutout.webp" aria-label="Hộp và chai dầu gội Cavisi Shampoo 250ml" type="button">
-              <img src="../../assets/shampoo-box-cutout.webp" alt="Thumbnail hộp và chai Shampoo" loading="lazy" decoding="async">
+            <button class="thumb-btn active" data-slide="0" aria-label="Ảnh 1: Hộp và chai Shampoo" type="button">
+              <img src="../../assets/shampoo-box-cutout.webp" alt="Thumb 1" loading="lazy" decoding="async">
             </button>
-            <button class="thumb-btn" data-src="../../assets/cavisi-playful-hug.jpg" aria-label="Mái tóc bồng bềnh và chai dầu gội Cavisi" type="button">
-              <img src="../../assets/cavisi-playful-hug.jpg" alt="Thumbnail model vui tươi" loading="lazy" decoding="async">
+            <button class="thumb-btn" data-slide="1" aria-label="Ảnh 2: Model mái tóc bồng bềnh" type="button">
+              <img src="../../assets/cavisi-playful-hug.jpg" alt="Thumb 2" loading="lazy" decoding="async">
             </button>
-            <button class="thumb-btn" data-src="../../assets/cavisi-shower-flatlay.jpg" aria-label="Bối cảnh phòng tắm gạch men và giọt nước" type="button">
-              <img src="../../assets/cavisi-shower-flatlay.jpg" alt="Thumbnail bối cảnh phòng tắm" loading="lazy" decoding="async">
+            <button class="thumb-btn" data-slide="2" aria-label="Ảnh 3: Bối cảnh phòng tắm" type="button">
+              <img src="../../assets/cavisi-shower-flatlay.jpg" alt="Thumb 3" loading="lazy" decoding="async">
             </button>
-            <button class="thumb-btn" data-src="../../assets/shampoo-texture.jpg" aria-label="Kết cấu gel làm sạch dịu nhẹ và bọt vi sinh" type="button">
-              <img src="../../assets/shampoo-texture.jpg" alt="Thumbnail kết cấu gel" loading="lazy" decoding="async">
+            <button class="thumb-btn" data-slide="3" aria-label="Ảnh 4: Kết cấu gel bọt vi sinh" type="button">
+              <img src="../../assets/shampoo-texture.jpg" alt="Thumb 4" loading="lazy" decoding="async">
             </button>
-            <button class="thumb-btn" data-src="../../assets/shampoo.webp" aria-label="Cận cảnh chai Cavisi Shampoo 250ml vòi nhấn" type="button">
-              <img src="../../assets/shampoo.webp" alt="Thumbnail chai Shampoo" loading="lazy" decoding="async">
+            <button class="thumb-btn" data-slide="4" aria-label="Ảnh 5: Cận cảnh chai Shampoo" type="button">
+              <img src="../../assets/shampoo.webp" alt="Thumb 5" loading="lazy" decoding="async">
             </button>
-            <button class="thumb-btn" data-src="../../assets/cavisi-duo-water.jpg" aria-label="Bộ đôi Cavisi Shampoo & Spray trên bệ đá" type="button">
-              <img src="../../assets/cavisi-duo-water.jpg" alt="Thumbnail bộ đôi Cavisi" loading="lazy" decoding="async">
+            <button class="thumb-btn" data-slide="5" aria-label="Ảnh 6: Bộ đôi trên bệ đá" type="button">
+              <img src="../../assets/cavisi-duo-water.jpg" alt="Thumb 6" loading="lazy" decoding="async">
             </button>
           </div>
         </div>

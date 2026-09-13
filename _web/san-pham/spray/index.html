@@ -7,7 +7,9 @@
   <meta name="description" content="Cavisi Spray 30ml — Xịt dưỡng leave-on cân bằng hệ vi sinh da đầu 24h với Postbiotic men vỏ liễu, Kẽm Zinc PCA và vòi xịt nano định hướng. Đạt chuẩn CBMP-HN.">
   <link rel="canonical" href="https://cavisi.vn/san-pham/spray/">
   <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
-  <link rel="apple-touch-icon" href="../../assets/cavisi-logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
 
   <!-- Open Graph / Facebook / Zalo -->
   <meta property="og:type" content="product">
@@ -100,28 +102,62 @@
     <!-- Hình ảnh & Thông số sản phẩm -->
     <section class="products section-pad" style="background:#fff;">
       <div class="product-showcase">
-        <div class="product-showcase-visual spray-bg reveal">
-          <div class="gallery-main">
-            <img src="../../assets/spray-box-cutout.webp" alt="Bộ đôi chai xịt dưỡng Cavisi Spray 30ml và hộp sản phẩm" loading="lazy">
+        <div class="product-showcase-visual reveal">
+          <div class="product-slider-container">
+            <div class="product-slider-track" aria-label="Bộ sưu tập ảnh Cavisi Spray">
+              <div class="product-slide studio-slide spray-studio" data-index="0">
+                <img src="../../assets/spray-box-cutout.webp" alt="Bộ đôi chai xịt dưỡng Cavisi Spray 30ml và hộp sản phẩm" loading="eager" fetchpriority="high">
+              </div>
+              <div class="product-slide" data-index="1">
+                <img src="../../assets/cavisi-in-use-spray.jpg" alt="Người mẫu thao tác xịt Cavisi Spray trực tiếp vào chân tóc sạch thoáng" loading="lazy">
+              </div>
+              <div class="product-slide" data-index="2">
+                <img src="../../assets/spray-mist.jpg" alt="Tia xịt phun sương siêu mịn nano thẩm thấu đều nang tóc" loading="lazy">
+              </div>
+              <div class="product-slide" data-index="3">
+                <img src="../../assets/cavisi-shower-flatlay.jpg" alt="Bối cảnh phòng tắm thư giãn cùng giọt nước thanh khiết" loading="lazy">
+              </div>
+              <div class="product-slide studio-slide spray-studio" data-index="4">
+                <img src="../../assets/spray.webp" alt="Cận cảnh chai Cavisi Spray 30ml với vòi xịt định hướng" loading="lazy">
+              </div>
+              <div class="product-slide" data-index="5">
+                <img src="../../assets/cavisi-duo-water.jpg" alt="Bộ đôi Cavisi Shampoo &amp; Spray trên bệ đá cẩm thạch" loading="lazy">
+              </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button class="slider-nav-btn prev" type="button" aria-label="Xem ảnh trước">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class="slider-nav-btn next" type="button" aria-label="Xem ảnh tiếp theo">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+
+            <!-- Counter Badge -->
+            <div class="slider-counter" aria-live="polite">
+              <span class="counter-current">1</span> / <span class="counter-total">6</span>
+            </div>
           </div>
+
+          <!-- Thumbnails Strip -->
           <div class="gallery-thumbs" role="tablist" aria-label="Bộ sưu tập ảnh sản phẩm Cavisi Spray">
-            <button class="thumb-btn active" data-src="../../assets/spray-box-cutout.webp" aria-label="Hộp và chai xịt dưỡng Cavisi Spray 30ml" type="button">
-              <img src="../../assets/spray-box-cutout.webp" alt="Thumbnail hộp và chai Spray" loading="lazy" decoding="async">
+            <button class="thumb-btn active" data-slide="0" aria-label="Ảnh 1: Hộp và chai Spray" type="button">
+              <img src="../../assets/spray-box-cutout.webp" alt="Thumb 1" loading="lazy" decoding="async">
             </button>
-            <button class="thumb-btn" data-src="../../assets/cavisi-in-use-spray.jpg" aria-label="Người mẫu thao tác xịt Cavisi Spray trực tiếp vào chân tóc" type="button">
-              <img src="../../assets/cavisi-in-use-spray.jpg" alt="Thumbnail model xịt dưỡng" loading="lazy" decoding="async">
+            <button class="thumb-btn" data-slide="1" aria-label="Ảnh 2: Model xịt dưỡng" type="button">
+              <img src="../../assets/cavisi-in-use-spray.jpg" alt="Thumb 2" loading="lazy" decoding="async">
             </button>
-            <button class="thumb-btn" data-src="../../assets/spray-mist.jpg" aria-label="Tia xịt phun sương siêu mịn thẩm thấu" type="button">
-              <img src="../../assets/spray-mist.jpg" alt="Thumbnail tia sương nano" loading="lazy" decoding="async">
+            <button class="thumb-btn" data-slide="2" aria-label="Ảnh 3: Tia sương nano" type="button">
+              <img src="../../assets/spray-mist.jpg" alt="Thumb 3" loading="lazy" decoding="async">
             </button>
-            <button class="thumb-btn" data-src="../../assets/cavisi-shower-flatlay.jpg" aria-label="Bối cảnh phòng tắm gạch men và giọt nước" type="button">
-              <img src="../../assets/cavisi-shower-flatlay.jpg" alt="Thumbnail bối cảnh phòng tắm" loading="lazy" decoding="async">
+            <button class="thumb-btn" data-slide="3" aria-label="Ảnh 4: Bối cảnh phòng tắm" type="button">
+              <img src="../../assets/cavisi-shower-flatlay.jpg" alt="Thumb 4" loading="lazy" decoding="async">
             </button>
-            <button class="thumb-btn" data-src="../../assets/spray.webp" aria-label="Cận cảnh chai Cavisi Spray 30ml" type="button">
-              <img src="../../assets/spray.webp" alt="Thumbnail chai Spray" loading="lazy" decoding="async">
+            <button class="thumb-btn" data-slide="4" aria-label="Ảnh 5: Cận cảnh chai Spray" type="button">
+              <img src="../../assets/spray.webp" alt="Thumb 5" loading="lazy" decoding="async">
             </button>
-            <button class="thumb-btn" data-src="../../assets/cavisi-duo-water.jpg" aria-label="Bộ đôi Cavisi Shampoo & Spray trên bệ đá" type="button">
-              <img src="../../assets/cavisi-duo-water.jpg" alt="Thumbnail bộ đôi Cavisi" loading="lazy" decoding="async">
+            <button class="thumb-btn" data-slide="5" aria-label="Ảnh 6: Bộ đôi trên bệ đá" type="button">
+              <img src="../../assets/cavisi-duo-water.jpg" alt="Thumb 6" loading="lazy" decoding="async">
             </button>
           </div>
         </div>

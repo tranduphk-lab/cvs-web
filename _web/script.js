@@ -105,26 +105,182 @@ if (scrollTopBtn) {
   });
 }
 
-// Product Showcase Gallery Thumbnail Switcher
-const thumbButtons = document.querySelectorAll('.thumb-btn');
-thumbButtons.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const parent = btn.closest('.product-showcase-visual');
-    if (!parent) return;
-    const mainImg = parent.querySelector('.gallery-main img');
-    const newSrc = btn.getAttribute('data-src');
-    const newAlt = btn.getAttribute('aria-label') || '';
-    if (!mainImg || !newSrc || mainImg.getAttribute('src') === newSrc) return;
+// Product Showcase Full-frame Interactive Slider
+const showcaseContainers = document.querySelectorAll('.product-showcase-visual');
 
-    parent.querySelectorAll('.thumb-btn').forEach((b) => b.classList.remove('active'));
-    btn.classList.add('active');
+showcaseContainers.forEach((visual) => {
+  const track = visual.querySelector('.product-slider-track');
+  if (!track) return;
 
-    mainImg.classList.add('fade');
-    setTimeout(() => {
-      mainImg.src = newSrc;
-      if (newAlt) mainImg.alt = newAlt;
-      mainImg.classList.remove('fade');
-    }, 150);
+  const slides = track.querySelectorAll('.product-slide');
+  const thumbs = visual.querySelectorAll('.thumb-btn');
+  const counterCurrent = visual.querySelector('.counter-current');
+  const counterTotal = visual.querySelector('.counter-total');
+  const prevBtn = visual.querySelector('.slider-nav-btn.prev');
+  const nextBtn = visual.querySelector('.slider-nav-btn.next');
+
+  const total = slides.length;
+  if (counterTotal) counterTotal.textContent = total;
+
+  let isScrolling = null;
+  let isDown = false;
+  let startX = 0;
+  let scrollLeftPos = 0;
+
+  function updateActiveState(index) {
+    const safeIndex = Math.max(0, Math.min(index, total - 1));
+    if (counterCurrent) counterCurrent.textContent = safeIndex + 1;
+
+    thumbs.forEach((t, i) => {
+      const isActive = i === safeIndex;
+      t.classList.toggle('active', isActive);
+      t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    });
+
+    const activeThumb = thumbs[safeIndex];
+    if (activeThumb) {
+      activeThumb.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
+  }
+
+  function getActiveIndex() {
+    const width = track.clientWidth || 1;
+    return Math.round(track.scrollLeft / width);
+  }
+
+  function scrollToSlide(index) {
+    const width = track.clientWidth;
+    const targetLeft = index * width;
+    track.scrollTo({ left: targetLeft, behavior: 'smooth' });
+    updateActiveState(index);
+  }
+
+  // Sync state on track scroll (swipe or programmatic)
+  track.addEventListener('scroll', () => {
+    window.clearTimeout(isScrolling);
+    isScrolling = setTimeout(() => {
+      const idx = getActiveIndex();
+      updateActiveState(idx);
+    }, 60);
+  }, { passive: true });
+
+  // Thumbnail buttons click
+  thumbs.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const idx = parseInt(btn.getAttribute('data-slide'), 10);
+      if (!isNaN(idx)) {
+        scrollToSlide(idx);
+      }
+    });
+  });
+
+  // Prev / Next arrow buttons
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      const current = getActiveIndex();
+      const prev = current <= 0 ? total - 1 : current - 1;
+      scrollToSlide(prev);
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      const current = getActiveIndex();
+      const next = current >= total - 1 ? 0 : current + 1;
+      scrollToSlide(next);
+    });
+  }
+
+  // Mouse Drag to Swipe on Desktop
+  track.addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX - track.offsetLeft;
+    scrollLeftPos = track.scrollLeft;
+    track.style.scrollBehavior = 'auto';
+    track.style.cursor = 'grabbing';
+  });
+
+  window.addEventListener('mouseup', () => {
+    if (!isDown) return;
+    isDown = false;
+    track.style.cursor = '';
+    track.style.scrollBehavior = 'smooth';
+    const idx = getActiveIndex();
+    scrollToSlide(idx);
+  });
+
+  track.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - track.offsetLeft;
+    const walk = x - startX;
+    track.scrollLeft = scrollLeftPos - walk;
+  });
+
+  // Keyboard navigation support when focused
+  track.setAttribute('tabindex', '0');
+  track.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      const current = getActiveIndex();
+      scrollToSlide(Math.max(0, current - 1));
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      const current = getActiveIndex();
+      scrollToSlide(Math.min(total - 1, current + 1));
+    }
   });
 });
+
+// Home Lifestyle Showcase Slider Controls
+const homeTrack = document.getElementById('home-showcase-track');
+const homePrev = document.getElementById('home-showcase-prev');
+const homeNext = document.getElementById('home-showcase-next');
+
+if (homeTrack) {
+  const getScrollAmount = () => {
+    const card = homeTrack.querySelector('.showcase-card');
+    return card ? card.offsetWidth + 22 : 340;
+  };
+
+  if (homePrev) {
+    homePrev.addEventListener('click', () => {
+      homeTrack.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+    });
+  }
+
+  if (homeNext) {
+    homeNext.addEventListener('click', () => {
+      homeTrack.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+    });
+  }
+
+  // Mouse Drag to Swipe on Desktop
+  let isDownHome = false;
+  let startXHome = 0;
+  let scrollLeftHome = 0;
+
+  homeTrack.addEventListener('mousedown', (e) => {
+    isDownHome = true;
+    startXHome = e.pageX - homeTrack.offsetLeft;
+    scrollLeftHome = homeTrack.scrollLeft;
+    homeTrack.style.scrollBehavior = 'auto';
+    homeTrack.style.cursor = 'grabbing';
+  });
+
+  window.addEventListener('mouseup', () => {
+    if (!isDownHome) return;
+    isDownHome = false;
+    homeTrack.style.cursor = '';
+    homeTrack.style.scrollBehavior = 'smooth';
+  });
+
+  homeTrack.addEventListener('mousemove', (e) => {
+    if (!isDownHome) return;
+    e.preventDefault();
+    const x = e.pageX - homeTrack.offsetLeft;
+    const walk = x - startXHome;
+    homeTrack.scrollLeft = scrollLeftHome - walk;
+  });
+}
 
