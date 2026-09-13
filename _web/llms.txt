@@ -1,0 +1,26 @@
+# Cavisi
+
+> Cavisi là thương hiệu chăm sóc da đầu theo triết lý Scalp-First Care, kết hợp khoa học và cảm hứng từ thiên nhiên trong chu trình hai bước Cleanse và Care.
+
+Ngôn ngữ chính: tiếng Việt (`vi-VN`). Website cung cấp thông tin về sản phẩm mỹ phẩm; nội dung không thay thế chẩn đoán hoặc tư vấn y khoa.
+
+## Trang chính
+
+- [Trang chủ](https://cavisi.vn/): Tổng quan thương hiệu, vấn đề da đầu, chu trình hai bước, sản phẩm và trạng thái bằng chứng.
+- [Cơ chế hai bước](https://cavisi.vn/co-che/): Giải thích vai trò rinse-off của Shampoo và leave-on của Spray.
+- [Danh mục sản phẩm](https://cavisi.vn/san-pham/): Tổng quan Cavisi Shampoo, Cavisi Spray và chu trình kết hợp.
+- [Cavisi Shampoo 250ml](https://cavisi.vn/san-pham/shampoo/): Thành phần, công dụng mỹ phẩm, hướng dẫn và giá niêm yết được cung cấp.
+- [Cavisi Spray 30ml](https://cavisi.vn/san-pham/spray/): Thành phần, công dụng mỹ phẩm, hướng dẫn và giá niêm yết được cung cấp.
+- [Thương hiệu](https://cavisi.vn/thuong-hieu/): Triết lý Scalp-First Care, Science × Nature và nguyên tắc minh bạch.
+- [Liên hệ](https://cavisi.vn/lien-he/): Hotline, Zalo và email hỗ trợ sản phẩm.
+
+## Tài liệu dành cho hệ thống AI
+
+- [Nội dung tổng hợp](https://cavisi.vn/llms-full.txt): Bản tóm lược có cấu trúc về thương hiệu, sản phẩm, cách dùng và giới hạn bằng chứng.
+- [Giá sản phẩm](https://cavisi.vn/pricing.txt): Giá niêm yết, dung tích và cách xác nhận giá hiện hành ở định dạng văn bản.
+
+## Liên hệ
+
+- Hotline: 0764 358 668
+- Zalo: https://zalo.me/0764358668
+- Email: cskh.cvs@gmail.com

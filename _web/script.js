@@ -25,30 +25,48 @@ if (header) {
 }
 
 if (header && menuButton && navigation) {
-  const closeMenu = () => {
+  const closeMenu = (restoreFocus = false) => {
     menuButton.classList.remove('open');
     navigation.classList.remove('open');
     document.body.classList.remove('menu-open');
     menuButton.setAttribute('aria-expanded', 'false');
     menuButton.setAttribute('aria-label', 'Mở menu');
+    if (restoreFocus) menuButton.focus();
   };
 
   menuButton.addEventListener('click', () => {
     const isOpening = !navigation.classList.contains('open');
-    if (!isOpening) return closeMenu();
+    if (!isOpening) return closeMenu(true);
     menuButton.classList.add('open');
     navigation.classList.add('open');
     document.body.classList.add('menu-open');
     menuButton.setAttribute('aria-expanded', 'true');
     menuButton.setAttribute('aria-label', 'Đóng menu');
+    navigation.querySelector('a')?.focus();
   });
 
-  navigation.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+  navigation.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => closeMenu()));
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 800) closeMenu();
+    if (window.innerWidth > 800 && navigation.classList.contains('open')) closeMenu();
   });
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') closeMenu();
+    if (!navigation.classList.contains('open')) return;
+    if (event.key === 'Escape') {
+      closeMenu(true);
+      return;
+    }
+    if (event.key !== 'Tab') return;
+
+    const focusable = [...navigation.querySelectorAll('a'), menuButton];
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
   });
 }
 
@@ -77,21 +95,35 @@ if (contactForm) {
     const topic = topicInput ? topicInput.value : '';
 
     if (!name || !phone || !topic) {
+      const invalidFields = [
+        [nameInput, !name],
+        [phoneInput, !phone],
+        [topicInput, !topic],
+      ].filter(([, invalid]) => invalid);
+      invalidFields.forEach(([field]) => field?.setAttribute('aria-invalid', 'true'));
       if (feedback) {
         feedback.className = 'form-feedback-error';
         feedback.style.display = 'block';
         feedback.textContent = 'Vui lòng điền đầy đủ họ tên, số điện thoại và chọn tình trạng da đầu cần tư vấn.';
       }
+      invalidFields[0]?.[0]?.focus();
       return;
     }
+
+    [nameInput, phoneInput, topicInput].forEach((field) => field?.removeAttribute('aria-invalid'));
+
+    const topicLabel = topicInput.options[topicInput.selectedIndex].text;
+    const message = messageInput ? messageInput.value.trim() : '';
+    const subject = encodeURIComponent(`[Cavisi] Yêu cầu hỗ trợ từ ${name}`);
+    const body = encodeURIComponent(`Họ và tên: ${name}\nSố điện thoại / Zalo: ${phone}\nNội dung cần hỗ trợ: ${topicLabel}\n\nMô tả:\n${message}`);
 
     if (feedback) {
       feedback.className = 'form-feedback-success';
       feedback.style.display = 'block';
-      feedback.innerHTML = `✓ Cảm ơn <strong>${name}</strong>! Cavisi đã tiếp nhận câu hỏi của bạn. Chuyên viên sẽ liên hệ lại qua số <strong>${phone}</strong> trong thời gian sớm nhất.<br><span style="font-size:12px;opacity:0.9;">Nếu cần tư vấn khẩn cấp, vui lòng gọi Hotline <a href="tel:0764358668" style="font-weight:700;text-decoration:underline;">0764 358 668</a> hoặc nhắn tin qua <a href="https://zalo.me/0764358668" target="_blank" rel="noopener noreferrer" style="font-weight:700;text-decoration:underline;">Zalo</a>.</span>`;
+      feedback.textContent = 'Ứng dụng email sẽ mở với nội dung đã điền. Vui lòng kiểm tra và nhấn Gửi để hoàn tất yêu cầu.';
     }
 
-    contactForm.reset();
+    window.location.href = `mailto:cskh.cvs@gmail.com?subject=${subject}&body=${body}`;
   });
 }
 
@@ -134,7 +166,7 @@ showcaseContainers.forEach((visual) => {
     thumbs.forEach((t, i) => {
       const isActive = i === safeIndex;
       t.classList.toggle('active', isActive);
-      t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      t.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     });
 
     const activeThumb = thumbs[safeIndex];
@@ -299,6 +331,7 @@ if (homeTrack) {
     modal.className = 'image-modal';
     modal.setAttribute('role', 'dialog');
     modal.setAttribute('aria-modal', 'true');
+    modal.setAttribute('aria-label', 'Xem ảnh phóng to');
     modal.setAttribute('aria-hidden', 'true');
     modal.innerHTML = `
       <div class="image-modal-backdrop"></div>
@@ -326,6 +359,7 @@ if (homeTrack) {
 
   let currentGallery = [];
   let currentIndex = -1;
+  let lastFocusedElement = null;
 
   function updateModalContent() {
     if (currentIndex < 0 || currentIndex >= currentGallery.length) return;
@@ -358,6 +392,7 @@ if (homeTrack) {
   }
 
   function openModal(src, caption, galleryName) {
+    lastFocusedElement = document.activeElement;
     if (galleryName) {
       const galleryEls = Array.from(document.querySelectorAll(`[data-zoom-gallery="${galleryName}"]`));
       currentGallery = galleryEls.map((el) => ({
@@ -375,6 +410,7 @@ if (homeTrack) {
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('modal-open');
+    closeBtn?.focus();
   }
 
   function closeModal() {
@@ -384,6 +420,8 @@ if (homeTrack) {
     if (modalImg) modalImg.src = '';
     currentGallery = [];
     currentIndex = -1;
+    if (lastFocusedElement instanceof HTMLElement) lastFocusedElement.focus();
+    lastFocusedElement = null;
   }
 
   function prevSlide() {
@@ -411,11 +449,32 @@ if (homeTrack) {
       prevSlide();
     } else if (e.key === 'ArrowRight') {
       nextSlide();
+    } else if (e.key === 'Tab') {
+      const focusable = [...modal.querySelectorAll('button:not([style*="display: none"])')];
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
     }
   });
 
   // Attach click & keydown listeners to all zoomable elements
   document.querySelectorAll('[data-zoom-src]').forEach((el) => {
+    if (!el.matches('a, button, input, select, textarea, summary')) {
+      el.setAttribute('role', 'button');
+      if (!el.hasAttribute('tabindex')) el.setAttribute('tabindex', '0');
+      if (!el.hasAttribute('aria-label')) {
+        const naturalLabel = `${el.textContent || ''} ${el.querySelector('img')?.getAttribute('alt') || ''}`.trim();
+        if (!naturalLabel) el.setAttribute('aria-label', 'Xem ảnh phóng to');
+      }
+    }
+
     const triggerZoom = () => {
       const src = el.getAttribute('data-zoom-src');
       const caption = el.getAttribute('data-zoom-caption') || el.querySelector('img')?.getAttribute('alt') || '';

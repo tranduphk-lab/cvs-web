@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cavisi Shampoo 250ml | Dầu gội làm sạch nền da đầu BHA & Postbiotic</title>
-  <meta name="description" content="Cavisi Shampoo 250ml — Công thức làm sạch dịu nhẹ với Salicylic Acid (BHA), Climbazole, Hexamidine và Postbiotic men vỏ liễu. Đạt chuẩn công bố CBMP-HN.">
+  <title>Dầu gội Cavisi Shampoo 250ml làm sạch nền da đầu</title>
+  <meta name="description" content="Cavisi Shampoo 250ml giúp làm sạch tóc, da đầu, dầu thừa và vảy gàu với Salicylic Acid, Climbazole, Hexamidine và thành phần lên men vỏ liễu.">
   <link rel="canonical" href="https://cavisi.vn/san-pham/shampoo/">
   <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
@@ -15,7 +15,7 @@
   <meta property="og:type" content="product">
   <meta property="og:url" content="https://cavisi.vn/san-pham/shampoo/">
   <meta property="og:title" content="Cavisi Shampoo 250ml | Dầu gội làm sạch nền da đầu">
-  <meta property="og:description" content="Làm sạch sâu không khô rát với BHA và Postbiotic men vỏ liễu. Giá 249.000đ chai 250ml.">
+  <meta property="og:description" content="Giúp làm sạch tóc, da đầu, dầu thừa và vảy gàu với BHA, Climbazole và thành phần lên men vỏ liễu. Giá 249.000đ chai 250ml.">
   <meta property="og:image" content="https://cavisi.vn/assets/shampoo-box-cutout.webp">
   <meta property="og:locale" content="vi_VN">
   <meta property="og:site_name" content="Cavisi">
@@ -25,37 +25,72 @@
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Cavisi Shampoo 250ml | Dầu gội làm sạch nền da đầu">
-  <meta name="twitter:description" content="Làm sạch triệt để mảng bám sừng và dầu thừa bằng hoạt chất chọn lọc, chuẩn bị nền tảng sạch thoáng cho da đầu.">
+  <meta name="twitter:description" content="Hỗ trợ làm sạch tế bào chết, dầu thừa và vảy tích tụ, chuẩn bị nền da đầu cho bước chăm sóc leave-on.">
   <meta name="twitter:image" content="https://cavisi.vn/assets/shampoo-box-cutout.webp">
 
-  <link rel="preload" href="../../assets/Inter-Variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="../../assets/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../../styles.css">
 
   <!-- Product Structured Data (JSON-LD) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org/",
-    "@type": "Product",
-    "name": "Cavisi Shampoo 250ml",
-    "image": [
-      "https://cavisi.vn/assets/shampoo-box-cutout.webp",
-      "https://cavisi.vn/assets/shampoo.webp",
-      "https://cavisi.vn/assets/shampoo-texture.jpg"
-    ],
-    "description": "Dầu gội làm sạch nền da đầu thế hệ mới với Salicylic Acid (BHA), Climbazole, Hexamidine Diisethionate và Postbiotic men vỏ liễu.",
-    "sku": "CVS-SHP-250",
-    "brand": {
-      "@type": "Brand",
-      "name": "Cavisi"
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": "https://cavisi.vn/san-pham/shampoo/",
-      "priceCurrency": "VND",
-      "price": "249000",
-      "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition"
-    }
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://cavisi.vn/#organization",
+        "name": "Cavisi",
+        "url": "https://cavisi.vn/",
+        "logo": "https://cavisi.vn/assets/logo-primary.webp"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://cavisi.vn/#website",
+        "url": "https://cavisi.vn/",
+        "name": "Cavisi",
+        "publisher": {"@id": "https://cavisi.vn/#organization"}
+      },
+      {
+        "@type": "Product",
+        "@id": "https://cavisi.vn/san-pham/shampoo/#product",
+        "url": "https://cavisi.vn/san-pham/shampoo/",
+        "name": "Cavisi Shampoo 250ml",
+        "image": [
+          "https://cavisi.vn/assets/shampoo-box-cutout.webp",
+          "https://cavisi.vn/assets/shampoo.webp",
+          "https://cavisi.vn/assets/shampoo-texture.webp"
+        ],
+        "description": "Dầu gội giúp làm sạch tóc, da đầu, dầu thừa và vảy gàu với Salicylic Acid, Climbazole, Hexamidine Diisethionate và thành phần lên men vỏ liễu.",
+        "category": "Dầu gội chăm sóc da đầu",
+        "brand": {"@type": "Brand", "name": "Cavisi"},
+        "offers": {
+          "@type": "Offer",
+          "url": "https://cavisi.vn/san-pham/shampoo/",
+          "priceCurrency": "VND",
+          "price": "249000",
+          "seller": {"@id": "https://cavisi.vn/#organization"}
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://cavisi.vn/san-pham/shampoo/#webpage",
+        "url": "https://cavisi.vn/san-pham/shampoo/",
+        "name": "Dầu gội Cavisi Shampoo 250ml làm sạch nền da đầu",
+        "mainEntity": {"@id": "https://cavisi.vn/san-pham/shampoo/#product"},
+        "isPartOf": {"@id": "https://cavisi.vn/#website"},
+        "breadcrumb": {"@id": "https://cavisi.vn/san-pham/shampoo/#breadcrumb"},
+        "inLanguage": "vi-VN"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://cavisi.vn/san-pham/shampoo/#breadcrumb",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://cavisi.vn/"},
+          {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://cavisi.vn/san-pham/"},
+          {"@type": "ListItem", "position": 3, "name": "Cavisi Shampoo", "item": "https://cavisi.vn/san-pham/shampoo/"}
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -90,7 +125,7 @@
           <p class="section-lead" style="margin-top:16px;">Dầu gội thanh lọc nền da đầu — Postbiotic Scalp Shampoo 250ml</p>
         </div>
         <div class="evidence-hero-copy reveal delay-1">
-          <p>Làm sạch sâu bã nhờn tích tụ, tế bào sừng chết và vảy gàu bám chặt quanh chân tóc bằng cơ chế tẩy tế bào chết hóa học dịu nhẹ kết hợp hoạt chất kháng khuẩn an toàn, trả lại nang tóc thông thoáng mà không làm khô căng biểu bì.</p>
+          <p>Giúp làm sạch tóc và da đầu, bao gồm dầu thừa và vảy gàu tích tụ. Công thức có Salicylic Acid, Climbazole và Hexamidine để hỗ trợ bước làm sạch nền trước khi chăm sóc leave-on.</p>
           <div>
             <a class="button" href="#thanh-phan">Xem chi tiết công thức <span aria-hidden="true">↓</span></a>
             <a class="text-link" href="../spray/">Xem bước 2: Cavisi Spray <span aria-hidden="true">→</span></a>
@@ -106,22 +141,22 @@
           <div class="product-slider-container">
             <div class="product-slider-track" aria-label="Bộ sưu tập ảnh Cavisi Shampoo">
               <div class="product-slide studio-slide" data-index="0">
-                <img src="../../assets/shampoo-box-cutout.webp" alt="Bộ đôi chai dầu gội Cavisi Shampoo 250ml và hộp sản phẩm" loading="eager" fetchpriority="high">
+                <img src="../../assets/shampoo-box-cutout.webp" alt="Bộ đôi chai dầu gội Cavisi Shampoo 250ml và hộp sản phẩm" loading="eager" fetchpriority="high" width="1122" height="1402">
               </div>
               <div class="product-slide" data-index="1">
-                <img src="../../assets/cavisi-playful-hug.jpg" alt="Mái tóc bồng bềnh cùng trải nghiệm làm sạch thoáng với Cavisi" loading="lazy">
+                <img src="../../assets/cavisi-playful-hug.webp" alt="Mái tóc bồng bềnh cùng trải nghiệm làm sạch thoáng với Cavisi" loading="lazy" width="896" height="1200">
               </div>
               <div class="product-slide" data-index="2">
-                <img src="../../assets/cavisi-shower-flatlay.jpg" alt="Bối cảnh phòng tắm thư giãn và giọt nước thanh khiết" loading="lazy">
+                <img src="../../assets/cavisi-shower-flatlay.webp" alt="Bối cảnh phòng tắm thư giãn và giọt nước thanh khiết" loading="lazy" width="896" height="1200">
               </div>
               <div class="product-slide" data-index="3">
-                <img src="../../assets/shampoo-texture.jpg" alt="Kết cấu gel vi sinh trong suốt và bọt xốp mịn màng" loading="lazy">
+                <img src="../../assets/shampoo-texture.webp" alt="Kết cấu gel vi sinh trong suốt và bọt xốp mịn màng" loading="lazy" width="1200" height="896">
               </div>
               <div class="product-slide studio-slide" data-index="4">
-                <img src="../../assets/shampoo.webp" alt="Cận cảnh chai Cavisi Shampoo 250ml với vòi nhấn tiện dụng" loading="lazy">
+                <img src="../../assets/shampoo.webp" alt="Cận cảnh chai Cavisi Shampoo 250ml với vòi nhấn tiện dụng" loading="lazy" width="1122" height="1402">
               </div>
               <div class="product-slide" data-index="5">
-                <img src="../../assets/cavisi-duo-water.jpg" alt="Bộ đôi Cavisi Shampoo &amp; Spray trên bệ đá cẩm thạch" loading="lazy">
+                <img src="../../assets/cavisi-duo-water.webp" alt="Bộ đôi Cavisi Shampoo &amp; Spray trên bệ đá cẩm thạch" loading="lazy" width="1200" height="896">
               </div>
             </div>
 
@@ -140,33 +175,33 @@
           </div>
 
           <!-- Thumbnails Strip -->
-          <div class="gallery-thumbs" role="tablist" aria-label="Bộ sưu tập ảnh sản phẩm Cavisi Shampoo">
-            <button class="thumb-btn active" data-slide="0" aria-label="Ảnh 1: Hộp và chai Shampoo" type="button">
-              <img src="../../assets/shampoo-box-cutout.webp" alt="Thumb 1" loading="lazy" decoding="async">
+          <div class="gallery-thumbs" role="group" aria-label="Bộ sưu tập ảnh sản phẩm Cavisi Shampoo">
+            <button class="thumb-btn active" data-slide="0" aria-label="Ảnh 1: Hộp và chai Shampoo" aria-pressed="true" type="button">
+              <img src="../../assets/shampoo-box-cutout.webp" alt="Thumb 1" loading="lazy" decoding="async" width="1122" height="1402">
             </button>
             <button class="thumb-btn" data-slide="1" aria-label="Ảnh 2: Model mái tóc bồng bềnh" type="button">
-              <img src="../../assets/cavisi-playful-hug.jpg" alt="Thumb 2" loading="lazy" decoding="async">
+              <img src="../../assets/cavisi-playful-hug.webp" alt="Thumb 2" loading="lazy" decoding="async" width="896" height="1200">
             </button>
             <button class="thumb-btn" data-slide="2" aria-label="Ảnh 3: Bối cảnh phòng tắm" type="button">
-              <img src="../../assets/cavisi-shower-flatlay.jpg" alt="Thumb 3" loading="lazy" decoding="async">
+              <img src="../../assets/cavisi-shower-flatlay.webp" alt="Thumb 3" loading="lazy" decoding="async" width="896" height="1200">
             </button>
             <button class="thumb-btn" data-slide="3" aria-label="Ảnh 4: Kết cấu gel bọt vi sinh" type="button">
-              <img src="../../assets/shampoo-texture.jpg" alt="Thumb 4" loading="lazy" decoding="async">
+              <img src="../../assets/shampoo-texture.webp" alt="Thumb 4" loading="lazy" decoding="async" width="1200" height="896">
             </button>
             <button class="thumb-btn" data-slide="4" aria-label="Ảnh 5: Cận cảnh chai Shampoo" type="button">
-              <img src="../../assets/shampoo.webp" alt="Thumb 5" loading="lazy" decoding="async">
+              <img src="../../assets/shampoo.webp" alt="Thumb 5" loading="lazy" decoding="async" width="1122" height="1402">
             </button>
             <button class="thumb-btn" data-slide="5" aria-label="Ảnh 6: Bộ đôi trên bệ đá" type="button">
-              <img src="../../assets/cavisi-duo-water.jpg" alt="Thumb 6" loading="lazy" decoding="async">
+              <img src="../../assets/cavisi-duo-water.webp" alt="Thumb 6" loading="lazy" decoding="async" width="1200" height="896">
             </button>
           </div>
         </div>
 
         <div class="product-copy reveal delay-1" style="padding:10px 0;">
           <p>ĐẶC TÍNH SẢN PHẨM</p>
-          <h2 style="margin:10px 0 18px;">Làm sạch sâu, <em>không khô rát.</em></h2>
+          <h2 style="margin:10px 0 18px;">Làm sạch nền, <em>chăm sóc đúng mức.</em></h2>
           <p style="font-size:15px; color:var(--muted); line-height:1.7; margin-bottom:24px;">
-            Phần lớn dầu gội trị gàu trên thị trường chọn giải pháp tẩy rửa cực mạnh, vô tình cuốn trôi cả lớp màng ẩm tự nhiên, khiến da đầu phản ứng ngược bằng cách đổ dầu nhiều hơn. Cavisi Shampoo làm sạch triệt để lớp sừng chết và bã nhờn bằng hoạt chất chọn lọc, giữ lại độ ẩm sinh lý và tạo nền tảng sạch thoáng tối đa cho bước xịt dưỡng tiếp theo.
+            Làm sạch quá mức có thể khiến da đầu khô căng và khó chịu. Cavisi Shampoo được định hướng làm sạch đúng mức, hỗ trợ loại bỏ dầu thừa, vảy gàu và cặn bẩn để chuẩn bị nền da đầu cho bước xịt dưỡng tiếp theo.
           </p>
           <div style="border-top:1px solid var(--line); padding-top:20px;">
             <dl style="display:grid; grid-template-columns:130px 1fr; gap:12px; font-size:14px; margin:0 0 24px;">
@@ -197,7 +232,7 @@
           <p class="section-kicker reveal">01 / Hoạt chất chính</p>
           <h2 class="reveal">Công thức làm sạch <em>đa tầng chọn lọc.</em></h2>
         </div>
-        <p class="section-lead reveal">Sự kết hợp giữa tẩy tế bào chết hóa học, hoạt chất kháng nấm men dịu nhẹ và thành phần lên men vi sinh sinh học.</p>
+        <p class="section-lead reveal">Công thức kết hợp Salicylic Acid hỗ trợ làm sạch tế bào chết, Climbazole và Hexamidine hỗ trợ kiểm soát yếu tố vi sinh cùng thành phần lên men vỏ liễu.</p>
       </div>
 
       <div class="info-grid">
@@ -205,21 +240,21 @@
           <span class="info-number">01</span>
           <p class="info-label">Tẩy sừng & Thông thoáng</p>
           <h3>Salicylic Acid (BHA)</h3>
-          <p>Acid gốc dầu len lỏi vào sâu trong lỗ chân lông quanh nang tóc, nhẹ nhàng làm mềm và bẻ gãy các liên kết sừng già cỗi, giải phóng bã nhờn đọng lại mà không cần cào gãi mạnh.</p>
+          <p>Salicylic Acid hỗ trợ làm sạch tế bào chết, dầu thừa và vảy tích tụ trên bề mặt da đầu.</p>
         </article>
 
         <article class="info-card reveal delay-1">
           <span class="info-number">02</span>
-          <p class="info-label">Ức chế vi sinh vật gây hại</p>
+          <p class="info-label">Hỗ trợ kiểm soát yếu tố vi sinh</p>
           <h3>Climbazole &amp; Hexamidine</h3>
-          <p>Bộ đôi kháng khuẩn và kháng nấm men an toàn, ức chế sự bùng phát mất kiểm soát của vi nấm Malassezia, ngăn chặn nguồn gốc gây ngứa và bong tróc vảy gàu.</p>
+          <p>Climbazole và Hexamidine hỗ trợ kiểm soát các yếu tố vi sinh trên da đầu, trong đó có vi nấm Malassezia liên quan đến tình trạng gàu.</p>
         </article>
 
         <article class="info-card featured reveal delay-2">
           <span class="info-number">03</span>
           <p class="info-label">Hỗ trợ hệ vi sinh</p>
           <h3>Postbiotic men vỏ liễu</h3>
-          <p>Chiết xuất lên men <em>Lactobacillus/Salix Purpurea Bark Ferment Extract</em> có mặt ngay từ bước gội đầu, cung cấp dưỡng chất làm dịu da đầu kích ứng ngay trong quá trình làm sạch.</p>
+          <p>Công thức có <em>Lactobacillus/Salix Purpurea Bark Ferment Extract</em>, một thành phần lên men được sử dụng trong định hướng hỗ trợ chăm sóc da đầu.</p>
         </article>
       </div>
 
@@ -235,7 +270,7 @@
     <section class="routine section-pad" id="huong-dan">
       <div class="section-intro compact">
         <p class="section-kicker reveal">02 / Hướng dẫn sử dụng</p>
-        <h2 class="reveal">4 bước gội đầu <em>chuẩn khoa học.</em></h2>
+        <h2 class="reveal">4 bước gội đầu <em>đúng hướng dẫn.</em></h2>
       </div>
 
       <div class="routine-grid" style="grid-template-columns:1fr;">
@@ -245,10 +280,10 @@
             <div><small>QUY TRÌNH CHUẨN</small><h3>Thao tác trong khi gội</h3></div>
           </div>
           <ol>
-            <li><strong>Làm ướt toàn bộ tóc và da đầu:</strong> Dùng nước ấm hoặc nước mát để làm giãn nở nhẹ lỗ chân lông và cuốn trôi bụi bẩn bề mặt.</li>
-            <li><strong>Lấy lượng vừa đủ và tạo bọt kỹ:</strong> Bơm 1-2 lần dầu gội ra lòng bàn tay, xoa đều tạo bọt mịn trước khi đưa lên da đầu.</li>
-            <li><strong>Massage nhẹ nhàng bằng đầu ngón tay:</strong> Dùng phần thịt đầu ngón tay (tuyệt đối không dùng móng tay cào) massage da đầu theo chuyển động tròn trong 2-3 phút để hoạt chất Salicylic Acid và Climbazole phát huy tác dụng.</li>
-            <li><strong>Xả kỹ bằng nước sạch:</strong> Xả trôi hoàn toàn bọt xà phòng và cặn bẩn ra khỏi chân tóc. Sau đó dùng khăn mềm thấm khô tóc và chuyển sang bước 2 với Cavisi Spray.</li>
+            <li><strong>Làm ướt toàn bộ tóc và da đầu:</strong> Dùng nước ấm hoặc nước mát trước khi thoa sản phẩm.</li>
+            <li><strong>Lấy lượng phù hợp:</strong> Cho dầu gội ra lòng bàn tay, xoa nhẹ rồi thoa chủ yếu lên da đầu.</li>
+            <li><strong>Massage nhẹ nhàng bằng đầu ngón tay:</strong> Dùng phần thịt đầu ngón tay massage da đầu theo chuyển động tròn; không cào hoặc chà xát mạnh bằng móng tay.</li>
+            <li><strong>Xả kỹ bằng nước sạch:</strong> Bảo đảm không còn sản phẩm lưu lại trên tóc và da đầu. Sau đó dùng khăn mềm thấm bớt nước trước khi chuyển sang bước 2 với Cavisi Spray.</li>
           </ol>
         </article>
       </div>
@@ -259,14 +294,14 @@
       <div class="section-intro compact">
         <p class="section-kicker reveal">03 / Chiến dịch phong cách sống</p>
         <h2 class="reveal">Cùng một sản phẩm, <em>đa chiều phong cách sống.</em></h2>
-        <p class="section-lead reveal">Bộ sưu tập 8 hình ảnh chiến dịch đời sống xoay quanh Cavisi Shampoo — ghi lại trải nghiệm đa dạng từ không gian phòng tắm, phục hồi sau thể thao đến mái tóc bồng bềnh tự tin mỗi ngày.</p>
+        <p class="section-lead reveal">Bộ sưu tập 8 hình ảnh chiến dịch minh họa Cavisi Shampoo trong không gian phòng tắm, sau vận động và nhịp sống hàng ngày.</p>
       </div>
 
       <div class="campaign-grid">
         <article class="campaign-card reveal">
           <div class="campaign-media">
             <span class="campaign-tag">In-Shower · Lather</span>
-            <img src="../../assets/shampoo-campaign/shampoo-camp-1-shower.jpg" alt="Người mẫu gội đầu tạo bọt vi sinh thư giãn trong phòng tắm kính" loading="lazy">
+            <img src="../../assets/shampoo-campaign/shampoo-camp-1-shower.webp" alt="Người mẫu gội đầu tạo bọt vi sinh thư giãn trong phòng tắm kính" loading="lazy" width="896" height="1200">
           </div>
           <div class="campaign-body">
             <h3>Bọt vi sinh thư giãn</h3>
@@ -277,18 +312,18 @@
         <article class="campaign-card reveal delay-1">
           <div class="campaign-media">
             <span class="campaign-tag">Towel Wrap · Vanity</span>
-            <img src="../../assets/shampoo-campaign/shampoo-camp-2-towel.jpg" alt="Người mẫu quấn khăn tắm cotton trắng vuốt nhẹ mái tóc sạch thoáng" loading="lazy">
+            <img src="../../assets/shampoo-campaign/shampoo-camp-2-towel.webp" alt="Người mẫu quấn khăn tắm cotton trắng vuốt nhẹ mái tóc sạch thoáng" loading="lazy" width="896" height="1200">
           </div>
           <div class="campaign-body">
             <h3>Chăm sóc sau khi gội</h3>
-            <p>Mái tóc sạch thoáng và da đầu nhẹ bẫng sau khi quấn khăn mềm trước gương lavabo cẩm thạch.</p>
+            <p>Hình ảnh minh họa trải nghiệm chăm sóc tóc và da đầu sau khi gội.</p>
           </div>
         </article>
 
         <article class="campaign-card reveal delay-2">
           <div class="campaign-media">
             <span class="campaign-tag">Outdoor · Breeze</span>
-            <img src="../../assets/shampoo-campaign/shampoo-camp-3-breeze.jpg" alt="Người mẫu ngoài trời nắng ấm với mái tóc bồng bềnh tự nhiên đón gió" loading="lazy">
+            <img src="../../assets/shampoo-campaign/shampoo-camp-3-breeze.webp" alt="Người mẫu ngoài trời nắng ấm với mái tóc bồng bềnh tự nhiên đón gió" loading="lazy" width="896" height="1200">
           </div>
           <div class="campaign-body">
             <h3>Tóc bồng bềnh đón gió</h3>
@@ -299,18 +334,18 @@
         <article class="campaign-card reveal delay-3">
           <div class="campaign-media">
             <span class="campaign-tag">Post-Workout · Active</span>
-            <img src="../../assets/shampoo-campaign/shampoo-camp-4-active.jpg" alt="Cô gái tập thể thao cầm chai Cavisi Shampoo chuẩn bị làm sạch da đầu" loading="lazy">
+            <img src="../../assets/shampoo-campaign/shampoo-camp-4-active.webp" alt="Cô gái tập thể thao cầm chai Cavisi Shampoo chuẩn bị làm sạch da đầu" loading="lazy" width="896" height="1200">
           </div>
           <div class="campaign-body">
             <h3>Làm sạch sau vận động</h3>
-            <p>Giải pháp giải phóng dầu thừa và mồ hôi bết dính sau những giờ tập luyện yoga và thể thao năng động.</p>
+            <p>Hỗ trợ làm sạch dầu thừa, mồ hôi và cặn bẩn tích tụ sau vận động.</p>
           </div>
         </article>
 
         <article class="campaign-card reveal">
           <div class="campaign-media">
             <span class="campaign-tag">Bathroom Shelfie</span>
-            <img src="../../assets/shampoo-campaign/shampoo-camp-5-shelfie.jpg" alt="Chai Cavisi Shampoo trên kệ gỗ phòng tắm phong cách Japandi tối giản" loading="lazy">
+            <img src="../../assets/shampoo-campaign/shampoo-camp-5-shelfie.webp" alt="Chai Cavisi Shampoo trên kệ gỗ phòng tắm phong cách Japandi tối giản" loading="lazy" width="896" height="1200">
           </div>
           <div class="campaign-body">
             <h3>Góc tĩnh vật Japandi tối giản</h3>
@@ -321,33 +356,33 @@
         <article class="campaign-card reveal delay-1">
           <div class="campaign-media">
             <span class="campaign-tag">Scalp Parting · Health</span>
-            <img src="../../assets/shampoo-campaign/shampoo-camp-6-parting.jpg" alt="Cận cảnh rẽ chân tóc sạch khỏe không vảy gàu tự tin" loading="lazy">
+            <img src="../../assets/shampoo-campaign/shampoo-camp-6-parting.webp" alt="Cận cảnh rẽ chân tóc sạch khỏe không vảy gàu tự tin" loading="lazy" width="896" height="1200">
           </div>
           <div class="campaign-body">
             <h3>Đường rẽ chân tóc sạch khỏe</h3>
-            <p>Tự tin rẽ từng kẽ tóc sạch thoáng, không còn nỗi lo vảy gàu bong tróc hay ửng đỏ khó chịu.</p>
+            <p>Hình ảnh minh họa cảm giác da đầu sạch thoáng sau bước làm sạch trong chu trình chăm sóc.</p>
           </div>
         </article>
 
         <article class="campaign-card reveal delay-2">
           <div class="campaign-media">
             <span class="campaign-tag">Playful · Volume</span>
-            <img src="../../assets/shampoo-campaign/shampoo-camp-7-playful.jpg" alt="Nụ cười sảng khoái tràn đầy năng lượng cùng chai dầu gội Cavisi" loading="lazy">
+            <img src="../../assets/shampoo-campaign/shampoo-camp-7-playful.webp" alt="Nụ cười sảng khoái tràn đầy năng lượng cùng chai dầu gội Cavisi" loading="lazy" width="896" height="1200">
           </div>
           <div class="campaign-body">
             <h3>Năng lượng tươi vui & Tự tin</h3>
-            <p>Nụ cười sảng khoái và cảm giác yêu thích việc chăm sóc mái tóc sạch gàu, dày mượt mỗi ngày.</p>
+            <p>Nụ cười sảng khoái và cảm giác thoải mái khi duy trì thói quen chăm sóc tóc và da đầu.</p>
           </div>
         </article>
 
         <article class="campaign-card reveal delay-3">
           <div class="campaign-media">
             <span class="campaign-tag">Dispensing · Texture</span>
-            <img src="../../assets/shampoo-campaign/shampoo-camp-8-pump.jpg" alt="Cận cảnh nhấn vòi pump chai Cavisi Shampoo giọt gel trong suốt chảy trên tay" loading="lazy">
+            <img src="../../assets/shampoo-campaign/shampoo-camp-8-pump.webp" alt="Cận cảnh nhấn vòi pump chai Cavisi Shampoo giọt gel trong suốt chảy trên tay" loading="lazy" width="896" height="1200">
           </div>
           <div class="campaign-body">
             <h3>Nhấn vòi pump định lượng</h3>
-            <p>Cận cảnh giọt gel trong suốt và bọt khí oxy siêu mịn tan chảy trên lòng bàn tay với vòi nhấn chuẩn xác.</p>
+            <p>Cận cảnh kết cấu gel và thao tác lấy sản phẩm bằng vòi nhấn.</p>
           </div>
         </article>
       </div>
@@ -358,7 +393,7 @@
       <div class="section-intro compact">
         <p class="section-kicker reveal">04 / Bước tiếp nối</p>
         <h2 class="reveal">Nhiệm vụ chưa dừng lại <em>khi xả sạch bọt.</em></h2>
-        <p class="section-lead reveal">Cavisi Shampoo đã hoàn thành xuất sắc nhiệm vụ làm sạch nền da đầu. Giờ là lúc bạn cần xịt dưỡng Cavisi Spray để bảo vệ da đầu suốt 24 giờ tiếp theo.</p>
+        <p class="section-lead reveal">Sau bước làm sạch nền với Cavisi Shampoo, bạn có thể tiếp tục với Cavisi Spray leave-on để hỗ trợ chăm sóc và củng cố hàng rào bảo vệ da đầu trong 24 giờ.</p>
       </div>
 
       <div style="text-align:center; margin-top:40px;">
