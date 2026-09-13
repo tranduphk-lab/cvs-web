@@ -237,6 +237,8 @@ const homeTrack = document.getElementById('home-showcase-track');
 const homePrev = document.getElementById('home-showcase-prev');
 const homeNext = document.getElementById('home-showcase-next');
 
+let isDraggingHome = false;
+
 if (homeTrack) {
   const getScrollAmount = () => {
     const card = homeTrack.querySelector('.showcase-card');
@@ -262,10 +264,10 @@ if (homeTrack) {
 
   homeTrack.addEventListener('mousedown', (e) => {
     isDownHome = true;
+    isDraggingHome = false;
     startXHome = e.pageX - homeTrack.offsetLeft;
     scrollLeftHome = homeTrack.scrollLeft;
     homeTrack.style.scrollBehavior = 'auto';
-    homeTrack.style.cursor = 'grabbing';
   });
 
   window.addEventListener('mouseup', () => {
@@ -273,18 +275,22 @@ if (homeTrack) {
     isDownHome = false;
     homeTrack.style.cursor = '';
     homeTrack.style.scrollBehavior = 'smooth';
+    setTimeout(() => { isDraggingHome = false; }, 60);
   });
 
   homeTrack.addEventListener('mousemove', (e) => {
     if (!isDownHome) return;
-    e.preventDefault();
     const x = e.pageX - homeTrack.offsetLeft;
     const walk = x - startXHome;
+    if (Math.abs(walk) > 6) {
+      isDraggingHome = true;
+      homeTrack.style.cursor = 'grabbing';
+    }
     homeTrack.scrollLeft = scrollLeftHome - walk;
   });
 }
 
-// Global Image Zoom Lightbox Controller
+// Global Image Zoom & Gallery Lightbox Controller
 (function initImageModal() {
   let modal = document.getElementById('image-modal');
   if (!modal) {
@@ -298,7 +304,10 @@ if (homeTrack) {
       <div class="image-modal-backdrop"></div>
       <div class="image-modal-content">
         <button class="image-modal-close" type="button" aria-label="Đóng">&times;</button>
+        <button class="image-modal-nav prev" type="button" aria-label="Xem ảnh trước">‹</button>
+        <button class="image-modal-nav next" type="button" aria-label="Xem ảnh tiếp theo">›</button>
         <div class="image-modal-figure">
+          <span class="image-modal-counter" id="image-modal-counter"></span>
           <img class="image-modal-img" id="image-modal-img" src="" alt="">
           <p class="image-modal-caption" id="image-modal-caption"></p>
         </div>
@@ -309,17 +318,60 @@ if (homeTrack) {
 
   const modalImg = modal.querySelector('#image-modal-img');
   const modalCaption = modal.querySelector('#image-modal-caption');
+  const modalCounter = modal.querySelector('#image-modal-counter');
   const closeBtn = modal.querySelector('.image-modal-close');
+  const prevNav = modal.querySelector('.image-modal-nav.prev');
+  const nextNav = modal.querySelector('.image-modal-nav.next');
   const backdrop = modal.querySelector('.image-modal-backdrop');
 
-  function openModal(src, caption) {
-    if (!modalImg) return;
-    modalImg.src = src;
-    modalImg.alt = caption || 'Chi tiết sơ đồ 3D y khoa';
-    if (modalCaption) {
-      modalCaption.textContent = caption || '';
-      modalCaption.style.display = caption ? 'block' : 'none';
+  let currentGallery = [];
+  let currentIndex = -1;
+
+  function updateModalContent() {
+    if (currentIndex < 0 || currentIndex >= currentGallery.length) return;
+    const item = currentGallery[currentIndex];
+    if (modalImg) {
+      modalImg.style.opacity = '0';
+      setTimeout(() => {
+        modalImg.src = item.src;
+        modalImg.alt = item.caption || 'Chi tiết hình ảnh';
+        modalImg.style.opacity = '1';
+      }, 100);
     }
+    if (modalCaption) {
+      modalCaption.textContent = item.caption || '';
+      modalCaption.style.display = item.caption ? 'block' : 'none';
+    }
+    if (modalCounter) {
+      if (currentGallery.length > 1) {
+        modalCounter.textContent = `${currentIndex + 1} / ${currentGallery.length}`;
+        modalCounter.style.display = 'block';
+      } else {
+        modalCounter.style.display = 'none';
+      }
+    }
+    if (prevNav && nextNav) {
+      const showNav = currentGallery.length > 1;
+      prevNav.style.display = showNav ? 'flex' : 'none';
+      nextNav.style.display = showNav ? 'flex' : 'none';
+    }
+  }
+
+  function openModal(src, caption, galleryName) {
+    if (galleryName) {
+      const galleryEls = Array.from(document.querySelectorAll(`[data-zoom-gallery="${galleryName}"]`));
+      currentGallery = galleryEls.map((el) => ({
+        src: el.getAttribute('data-zoom-src') || el.querySelector('img')?.src || '',
+        caption: el.getAttribute('data-zoom-caption') || el.querySelector('img')?.getAttribute('alt') || ''
+      }));
+      currentIndex = currentGallery.findIndex((item) => item.src === src);
+      if (currentIndex === -1) currentIndex = 0;
+    } else {
+      currentGallery = [{ src, caption }];
+      currentIndex = 0;
+    }
+
+    updateModalContent();
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('modal-open');
@@ -330,25 +382,60 @@ if (homeTrack) {
     modal.setAttribute('aria-hidden', 'true');
     document.body.classList.remove('modal-open');
     if (modalImg) modalImg.src = '';
+    currentGallery = [];
+    currentIndex = -1;
+  }
+
+  function prevSlide() {
+    if (currentGallery.length <= 1) return;
+    currentIndex = currentIndex <= 0 ? currentGallery.length - 1 : currentIndex - 1;
+    updateModalContent();
+  }
+
+  function nextSlide() {
+    if (currentGallery.length <= 1) return;
+    currentIndex = currentIndex >= currentGallery.length - 1 ? 0 : currentIndex + 1;
+    updateModalContent();
   }
 
   if (closeBtn) closeBtn.addEventListener('click', closeModal);
   if (backdrop) backdrop.addEventListener('click', closeModal);
+  if (prevNav) prevNav.addEventListener('click', (e) => { e.stopPropagation(); prevSlide(); });
+  if (nextNav) nextNav.addEventListener('click', (e) => { e.stopPropagation(); nextSlide(); });
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
+    if (!modal.classList.contains('active')) return;
+    if (e.key === 'Escape') {
       closeModal();
+    } else if (e.key === 'ArrowLeft') {
+      prevSlide();
+    } else if (e.key === 'ArrowRight') {
+      nextSlide();
     }
   });
 
-  // Attach click listener to all zoomable mechanism elements
+  // Attach click & keydown listeners to all zoomable elements
   document.querySelectorAll('[data-zoom-src]').forEach((el) => {
-    el.addEventListener('click', () => {
+    const triggerZoom = () => {
       const src = el.getAttribute('data-zoom-src');
       const caption = el.getAttribute('data-zoom-caption') || el.querySelector('img')?.getAttribute('alt') || '';
-      if (src) openModal(src, caption);
+      const gallery = el.getAttribute('data-zoom-gallery') || '';
+      if (src) openModal(src, caption, gallery);
+    };
+
+    el.addEventListener('click', () => {
+      if (isDraggingHome) return;
+      triggerZoom();
+    });
+
+    el.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        triggerZoom();
+      }
     });
   });
 })();
+
 
 
