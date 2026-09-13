@@ -69,7 +69,7 @@ section[id],article[id]{scroll-margin-top:calc(var(--header) + 18px)}
 .brand{width:126px;flex:0 0 auto}.brand img,.footer-brand img{width:100%;height:100%;object-fit:contain}
 .main-nav{margin-left:auto;display:flex;align-items:center;gap:28px}.main-nav a,.header-link{font-size:13px;font-weight:600}.main-nav a{position:relative;color:var(--ink)}.main-nav a:after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;background:var(--aqua);transition:.25s}.main-nav a:hover:after,.main-nav a[aria-current="page"]:after{right:0}
 .header-link{border-left:1px solid var(--line);padding-left:26px;color:var(--blue);display:inline-flex;align-items:center;gap:4px}
-.menu-button{display:none;width:42px;height:42px;border:0;background:transparent;padding:12px;cursor:pointer}.menu-button span{display:block;height:2px;background:var(--blue);margin:5px 0;transition:.25s}
+.menu-button{display:none;width:48px;height:48px;border:0;background:transparent;padding:12px;cursor:pointer}.menu-button span{display:block;height:2px;background:var(--blue);margin:5px 0;transition:.25s}
 
 /* Common Components */
 .section-pad{padding:clamp(75px,8vw,120px) var(--pad)}

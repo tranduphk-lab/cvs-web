@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="26" fill="#00516d"/>
+  <g transform="translate(62,60)">
+    <!-- 5 white rounded petals -->
+    <rect x="-6.5" y="-42" width="13" height="30" rx="6.5" fill="#ffffff" transform="rotate(-45)"/>
+    <rect x="-6.5" y="-42" width="13" height="30" rx="6.5" fill="#ffffff" transform="rotate(18)"/>
+    <rect x="-6.5" y="-42" width="13" height="30" rx="6.5" fill="#ffffff" transform="rotate(80)"/>
+    <rect x="-6.5" y="-42" width="13" height="30" rx="6.5" fill="#ffffff" transform="rotate(142)"/>
+    <rect x="-6.5" y="-42" width="13" height="30" rx="6.5" fill="#ffffff" transform="rotate(-110)"/>
+    <!-- 2 aqua dots -->
+    <circle cx="-42" cy="7" r="8" fill="#5bc8b5"/>
+    <circle cx="-27" cy="-3" r="8" fill="#5bc8b5"/>
+  </g>
+</svg>
