@@ -17,6 +17,9 @@ _Logo/
 Thumbs.db
 desktop.ini
 
+# Scripts
+push.bat
+
 # Node dependencies & environment
 node_modules/
 .env
