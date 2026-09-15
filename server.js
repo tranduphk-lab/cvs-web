@@ -23,11 +23,6 @@ const MIME_TYPES = {
 
 const server = http.createServer((req, res) => {
   let reqUrl = decodeURIComponent(req.url.split('?')[0]);
-  if (reqUrl.startsWith('/bang-chung')) {
-    res.writeHead(301, { Location: '/' });
-    res.end();
-    return;
-  }
   if (reqUrl.endsWith('/')) {
     reqUrl += 'index.html';
   }
