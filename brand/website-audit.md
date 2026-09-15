@@ -84,7 +84,7 @@ Cavisi đã xác nhận `Bao bì Cavisi ok8.pdf` là bản in cuối, tiếp t�
 - Render headless homepage ở `1440px` và `375px`, trang Spray ở `1440px`, trang Liên hệ ở `375px`.
 - Đối chiếu layout, navigation, CTA và text wrapping ở các viewport đại diện.
 - Kiểm tra HTTP production: các URL chính trả `200`, HTTP chuyển sang HTTPS bằng `308`, và `www` chuyển về non-www bằng `307`.
-- So sánh SHA-256 giữa production, commit `b9f5020` và worktree: production khớp commit ở toàn bộ HTML/TXT/XML được kiểm tra nhưng khác bản local mới; riêng `robots.txt` không thay đổi.
+- So sánh SHA-256 sau triển khai: toàn bộ HTML/TXT/XML production được kiểm tra khớp nội dung website trong commit đã deploy.
 - Kiểm tra production không có `X-Robots-Tag: noindex`; canonical và robots hiện không tạo blocker crawl rõ ràng.
 - Vercel vẫn trả `application/octet-stream` cho `sitemap.xml` và các tệp TXT dù repository có cấu hình header tại project root. Nội dung đều truy cập được và hợp lệ; đây không phải blocker crawl/index hiện tại.
 - Render production ở desktop `1440x1100` và mobile `375x812`; đo DOM xác nhận `document.scrollWidth` bằng viewport và không có overflow ngang toàn trang.
@@ -94,7 +94,7 @@ Cavisi đã xác nhận `Bao bì Cavisi ok8.pdf` là bản in cuối, tiếp t�
 - [ ] Lưu hồ sơ chứng minh/quyền sử dụng badge `EU STANDARD`.
 - [x] Đồng bộ website với tên, dung tích, giá, hotline, phiếu công bố, nguồn gốc nguyên liệu Postbiotic và hướng dẫn Spray đã xác nhận.
 - [ ] Bổ sung TCCS, kiểm nghiệm và hồ sơ claim trước khi mở rộng nội dung khoa học.
-- [x] Xác nhận `cavisi.vn` đang chạy trên Vercel và production hiện khớp commit `b9f5020` của `main`.
+- [x] Xác nhận `cavisi.vn` đang chạy trên Vercel và production đã nhận bản cập nhật từ `main`.
 - [x] Commit và push bản local đã duyệt để kích hoạt deployment mới trên Vercel.
 - [x] Xác nhận production mới khớp nội dung commit và kiểm tra các dữ kiện trọng yếu.
 - [ ] Chỉ gửi sitemap/yêu cầu index lại sau khi production mới đã vượt kiểm tra.
