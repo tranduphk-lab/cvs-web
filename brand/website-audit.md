@@ -6,7 +6,7 @@
 
 **Cơ sở đối chiếu:** brand package trong `brand/`
 
-**Trạng thái:** Bản local đã đồng bộ dữ liệu cốt lõi; bản production trên Vercel vẫn là commit cũ và chưa chứa các cập nhật ngày 15/09/2026.
+**Trạng thái:** Bản production trên Vercel đã đồng bộ dữ liệu cốt lõi và vượt kiểm tra HTTP, nội dung máy đọc và layout tại các viewport đại diện.
 
 ## Brand health scorecard
 
@@ -62,12 +62,12 @@ Nhiều ảnh packshot và lifestyle hiển thị trực tiếp badge `EU Standa
 
 Cavisi đã xác nhận `Bao bì Cavisi ok8.pdf` là bản in cuối, tiếp tục dùng badge và nguyên liệu Postbiotic nhập khẩu từ châu Âu có giấy tờ hợp lệ. Website có thể nêu đúng nguồn gốc nguyên liệu, nhưng chưa nên diễn giải badge thành chứng nhận EU của toàn bộ thành phẩm nếu không có hồ sơ riêng cho badge.
 
-### Bản cập nhật chưa được triển khai lên production
+### Trạng thái triển khai production
 
-- `https://cavisi.vn/` đang được phục vụ bởi Vercel và khớp chính xác với commit `b9f5020` trên nhánh `main`.
-- Các thay đổi đã xác nhận hiện còn ở worktree, chưa có trong `origin/main`; vì vậy Vercel chưa thể triển khai bản mới.
-- Bản live vẫn còn định dạng hotline `0764 358 668`, giá gạch `398.000đ` và dữ liệu sitemap ngày `2026-09-14`.
-- Chưa gửi yêu cầu lập chỉ mục lại cho Google khi production chưa đồng bộ.
+- `https://cavisi.vn/` đang được phục vụ bởi Vercel và đã triển khai các commit cập nhật ngày 15/09/2026.
+- Bản live đã hiển thị hotline `076 435 8668`, giá combo `359.000đ`, hướng dẫn Spray leave-on và dữ liệu sitemap ngày `2026-09-15`.
+- Hash các tài nguyên production đã được đối chiếu với nội dung commit tương ứng sau khi triển khai.
+- Chưa gửi sitemap/yêu cầu lập chỉ mục lại vì môi trường hiện tại không có phiên Google Search Console đã đăng nhập để thao tác.
 
 ### Dữ liệu và hồ sơ còn cần quản trị
 
@@ -86,7 +86,8 @@ Cavisi đã xác nhận `Bao bì Cavisi ok8.pdf` là bản in cuối, tiếp t�
 - Kiểm tra HTTP production: các URL chính trả `200`, HTTP chuyển sang HTTPS bằng `308`, và `www` chuyển về non-www bằng `307`.
 - So sánh SHA-256 giữa production, commit `b9f5020` và worktree: production khớp commit ở toàn bộ HTML/TXT/XML được kiểm tra nhưng khác bản local mới; riêng `robots.txt` không thay đổi.
 - Kiểm tra production không có `X-Robots-Tag: noindex`; canonical và robots hiện không tạo blocker crawl rõ ràng.
-- Ghi nhận Vercel đang trả `application/octet-stream` cho `sitemap.xml` và các tệp TXT; repository đã bổ sung `vercel.json` tại project root để đặt MIME chuẩn.
+- Vercel vẫn trả `application/octet-stream` cho `sitemap.xml` và các tệp TXT dù repository có cấu hình header tại project root. Nội dung đều truy cập được và hợp lệ; đây không phải blocker crawl/index hiện tại.
+- Render production ở desktop `1440x1100` và mobile `375x812`; đo DOM xác nhận `document.scrollWidth` bằng viewport và không có overflow ngang toàn trang.
 
 ## Điều kiện hoàn tất vòng production
 
@@ -94,7 +95,8 @@ Cavisi đã xác nhận `Bao bì Cavisi ok8.pdf` là bản in cuối, tiếp t�
 - [x] Đồng bộ website với tên, dung tích, giá, hotline, phiếu công bố, nguồn gốc nguyên liệu Postbiotic và hướng dẫn Spray đã xác nhận.
 - [ ] Bổ sung TCCS, kiểm nghiệm và hồ sơ claim trước khi mở rộng nội dung khoa học.
 - [x] Xác nhận `cavisi.vn` đang chạy trên Vercel và production hiện khớp commit `b9f5020` của `main`.
-- [ ] Commit và push bản local đã duyệt để kích hoạt deployment mới trên Vercel.
-- [ ] Xác nhận production mới khớp bản local bằng hash và kiểm tra nội dung trọng yếu.
+- [x] Commit và push bản local đã duyệt để kích hoạt deployment mới trên Vercel.
+- [x] Xác nhận production mới khớp nội dung commit và kiểm tra các dữ kiện trọng yếu.
 - [ ] Chỉ gửi sitemap/yêu cầu index lại sau khi production mới đã vượt kiểm tra.
-- [ ] Chạy lại visual QA trên bản deploy, gồm mobile 375px, desktop, keyboard focus và reduced motion.
+- [x] Chạy lại visual QA trên bản deploy ở mobile 375px và desktop; xác nhận không có overflow ngang toàn trang.
+- [ ] Kiểm tra tương tác keyboard focus và reduced motion trên trình duyệt tương tác khi có phiên phù hợp.
