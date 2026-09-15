@@ -20,6 +20,8 @@ Mở `http://127.0.0.1:4173`.
 - `thuong-hieu/index.html`: Câu chuyện thương hiệu, triết lý Science × Nature, nhà máy Butter-C.
 - `kien-thuc/index.html`: Hub bài viết kiến thức chăm sóc da đầu có nguồn tham khảo.
 - `kien-thuc/da-dau-khi-doi-mu-bao-hiem/index.html`: Bài kiến thức đầu tiên về nhiệt, mồ hôi và cảm giác bết khi thường xuyên đội mũ bảo hiểm.
+- `kien-thuc/gau-la-gi-vi-sao-de-quay-lai/index.html`: Bài giải thích có nguồn về gàu, cơ chế nhiều yếu tố, tính tái diễn và cách chăm sóc thông thường.
+- `bang-chung/index.html`: Trạng thái hồ sơ, thứ bậc nguồn và ranh giới bằng chứng của thông tin Cavisi.
 - `lien-he/index.html`: Kênh liên lạc trực tiếp (Hotline, Zalo, Email), nhà máy và form tư vấn trực tuyến.
 - `styles.css`: Hệ thống thiết kế typography Inter thanh lịch, responsive và motion.
 - `script.js`: Scroll reveal, sticky header, menu mobile, FAQ accordion và contact form.
@@ -33,10 +35,10 @@ Mở `http://127.0.0.1:4173`.
 - Hai số tiếp nhận đã được đối chiếu với phiếu công bố trong bộ nguồn nội bộ.
 - TNPCB Shampoo: `28338/26/CBMP-HN`.
 - TNPCB Spray: `28222/26/CBMP-HN`.
-- Mã/tệp TCCS và hồ sơ kiểm nghiệm thành phẩm hiện chưa có trong bộ nguồn website.
+- Nhà máy đã kiểm nghiệm thành phần và lưu đầy đủ giấy tờ; Cavisi hiện chưa xin bản sao nên website chưa thể tự đối chiếu hoặc công khai tên hồ sơ, chỉ tiêu và kết quả cụ thể.
 
 ## Trước khi production
 
-- Bổ sung TCCS, COA/kiểm nghiệm thành phẩm và hồ sơ claim khi có.
+- Xin bản sao hồ sơ kiểm nghiệm từ nhà máy nếu cần công khai tên tài liệu, chỉ tiêu hoặc kết quả cụ thể.
 - Xác nhận quyền sở hữu Zalo, email và kênh mua chính thức.
 - Không công khai tên và địa chỉ Hộ kinh doanh Trần Đình Dư cho đến khi Cavisi có quyết định mới.

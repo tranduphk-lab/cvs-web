@@ -27,6 +27,8 @@ Tài liệu này là nguồn ngữ cảnh nền tảng cho các hoạt động m
 - **Hạn sử dụng:** thể hiện theo thông tin in trên bao bì; không tự suy diễn hoặc bổ sung thời hạn còn thiếu cho Spray.
 - **Badge:** tiếp tục dùng `EU STANDARD` theo xác nhận của thương hiệu. Trước khi dùng badge như một bằng chứng/tiêu chuẩn độc lập trong nội dung, vẫn cần lưu hồ sơ chứng minh và quyền sử dụng.
 - **Hồ sơ nguyên liệu Postbiotic:** đã có giấy tờ hợp lệ cho nguyên liệu nhập khẩu từ châu Âu; coi nguồn gốc EU và phân loại nguyên liệu là dữ kiện đã xác nhận, không yêu cầu xác nhận lại.
+- **Kiểm nghiệm tại nhà máy:** nhà máy đã thực hiện kiểm nghiệm thành phần và có đầy đủ giấy tờ. Cavisi hiện chưa xin bản sao, vì vậy chưa thể tự đối chiếu hoặc công khai tên tài liệu, chỉ tiêu và kết quả cụ thể trên website.
+- **Ghi nhận người dùng ban đầu:** Cavisi đã trực tiếp kiểm chứng một trường hợp sử dụng cho kết quả rất tích cực. Đây là ghi nhận thực tế ban đầu, chưa phải khảo sát nhiều người hoặc thử nghiệm có phương pháp, nên không dùng để cam kết hiệu quả chung.
 
 Giải thích “lưu hoạt chất trên da đầu lâu hơn, từ đó giúp hệ vi sinh da đầu được cải thiện” là cơ chế/claim do thương hiệu xác nhận. Hồ sơ nguyên liệu Postbiotic không tự chứng minh hiệu quả của thành phẩm; không trình bày đây là kết quả đã được chứng minh khi chưa có tài liệu khoa học hoặc kết quả thử nghiệm thành phẩm phù hợp.
 

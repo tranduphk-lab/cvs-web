@@ -40,7 +40,9 @@ Hai mã trên được phân loại là **số tiếp nhận phiếu công bố 
 - Chưa xác minh bố cục hiển thị của DOCX vì môi trường render thiếu LibreOffice đóng gói. Giới hạn này không ảnh hưởng đến việc trích xuất nội dung dùng cho matrix.
 - Đã có trong workspace: hai phiếu công bố đã tiếp nhận và artwork `ok8` được xác nhận là bản in cuối.
 - Đã được Cavisi xác nhận: nguyên liệu Postbiotic nhập khẩu từ châu Âu có giấy tờ hợp lệ; không yêu cầu xác nhận lại hồ sơ nguồn gốc/phân loại nguyên liệu.
-- Chưa có trong workspace: TCCS hoàn chỉnh, COA, kết quả kiểm nghiệm, tài liệu chứng nhận nhà máy, hồ sơ chứng minh/quyền sử dụng riêng cho badge `EU STANDARD`, tài liệu khoa học được chọn làm nguồn công khai hoặc review khách hàng đã xác minh.
+- Nhà máy đã thực hiện kiểm nghiệm thành phần và có đầy đủ giấy tờ; Cavisi hiện chưa xin bản sao nên các tài liệu này chưa có trong workspace để tự đối chiếu hoặc công khai chi tiết.
+- Đã có một ghi nhận thực tế do Cavisi trực tiếp kiểm chứng với kết quả rất tích cực; chưa có bộ khảo sát nhiều người, phương pháp đánh giá thống nhất hoặc tài liệu đồng ý công khai của người tham gia.
+- Chưa có trong workspace: bản sao TCCS hoàn chỉnh, COA, kết quả kiểm nghiệm, tài liệu chứng nhận nhà máy, hồ sơ chứng minh/quyền sử dụng riêng cho badge `EU STANDARD`, tài liệu khoa học được chọn làm nguồn công khai hoặc bộ đánh giá nhiều người đã xác minh.
 - Thông tin Hộ kinh doanh Trần Đình Dư và địa chỉ đã có trong tài liệu nguồn nhưng được Cavisi quyết định chưa công khai trên website.
 
 ---
@@ -191,7 +193,7 @@ Có thể xuất bản một trang minh bạch dạng `Evidence status`, không 
 - `Thông tin sản xuất`: có trong TTSP và dữ liệu hành chính trên hai phiếu công bố đã tiếp nhận.
 - `Kiểm nghiệm thành phẩm`: chưa có tài liệu trong bộ nguồn hiện tại.
 - `Cơ sở khoa học Postbiotic/Microbiome`: chưa chọn nguồn công khai.
-- `Kết quả người dùng`: chưa có dữ liệu xác minh.
+- `Kết quả người dùng`: đã có một ghi nhận thực tế do Cavisi trực tiếp kiểm chứng với kết quả rất tích cực; số lượng còn ít và chưa có phương pháp khảo sát thống nhất, nên chỉ trình bày là ghi nhận ban đầu.
 
 Không nên tạo badge `Đã kiểm nghiệm`, `Đạt chuẩn EU`, `Clinical`, `Dermatologist tested` hoặc số liệu hiệu quả khi chưa có tài liệu tương ứng.
 
@@ -246,12 +248,12 @@ Không nên tạo badge `Đã kiểm nghiệm`, `Đạt chuẩn EU`, `Clinical`,
 | P0 | Tên, dung tích, giá và hotline | Dữ liệu thương mại nhất quán | VERIFIED - `Cavisi Shampoo` 250 ml/249.000 VNĐ; `Cavisi Spray` 30 ml/149.000 VNĐ; combo 359.000 VNĐ; hotline `076 435 8668` |
 | P0 | Mã vạch chính thức | Quản trị dữ liệu sản phẩm | VERIFIED-INTERNAL - không đưa lên website |
 | P0 | Hồ sơ/quyền sử dụng `EU STANDARD` | Chứng minh ý nghĩa và quyền dùng badge | MISSING - thương hiệu đã chốt tiếp tục dùng badge trên artwork |
-| P1 | COA/phiếu kiểm nghiệm thành phẩm | Các chỉ tiêu đã kiểm tra và đơn vị thực hiện | MISSING |
+| P1 | COA/phiếu kiểm nghiệm do nhà máy lưu | Các chỉ tiêu đã kiểm tra và đơn vị thực hiện | CONFIRMED-BY-BRAND - nhà máy đã kiểm nghiệm thành phần và có giấy tờ; Cavisi chưa xin bản sao để đối chiếu |
 | P1 | Hồ sơ/chứng nhận nhà máy được phép công bố | Thông tin sản xuất và tiêu chuẩn nhà máy | MISSING |
 | P1 | Hồ sơ nguyên liệu Postbiotic nhập khẩu từ châu Âu | Nguồn gốc và phân loại nguyên liệu | VERIFIED-BY-BRAND - có giấy tờ hợp lệ, không cần xác nhận lại |
 | P1 | Tài liệu khoa học được chuyên môn duyệt | Giải thích scalp microbiome và Postbiotic | MISSING |
 | P1 | Claim matrix được duyệt | Từ ngữ nào dùng ở homepage/product/evidence | MISSING |
-| P2 | Review/khảo sát người dùng có consent và phương pháp | Social proof có thể xác minh | MISSING |
+| P2 | Khảo sát nhiều người có sự đồng ý và phương pháp rõ ràng | Bằng chứng trải nghiệm có thể kiểm tra | GHI NHẬN BAN ĐẦU - đã có một trường hợp do Cavisi trực tiếp kiểm chứng; chưa đủ số lượng và phương pháp để suy ra hiệu quả chung |
 | P2 | Founder story và hồ sơ đội ngũ | Tăng tính người thật và trách nhiệm thương hiệu | MISSING |
 
 ---
@@ -298,12 +300,13 @@ Không nên tạo badge `Đã kiểm nghiệm`, `Đạt chuẩn EU`, `Clinical`,
 9. Chưa công khai tên và địa chỉ Hộ kinh doanh Trần Đình Dư trên website.
 10. Hạn sử dụng sẽ được in trên bao bì; chưa có thời hạn cụ thể mới cho Spray.
 11. Nguyên liệu Postbiotic nhập khẩu từ châu Âu có giấy tờ hợp lệ; không cần xác nhận lại.
+12. Cavisi đã trực tiếp kiểm chứng một trường hợp sử dụng cho kết quả rất tích cực; hiện chỉ dùng như ghi nhận ban đầu, không đại diện cho hiệu quả chung.
 
 ### Còn cần bổ sung hoặc quyết định trước khi dùng làm bằng chứng
 
 1. Mã/tệp TCCS riêng của từng sản phẩm.
 2. Hồ sơ/quyền sử dụng riêng của badge `EU STANDARD` nếu diễn giải badge như chứng nhận cho thành phẩm; không yêu cầu lại hồ sơ nguồn gốc nguyên liệu Postbiotic.
-3. COA và kiểm nghiệm thành phẩm; không yêu cầu lại hồ sơ nguyên liệu Postbiotic.
+3. Bản sao COA và hồ sơ kiểm nghiệm từ nhà máy nếu Cavisi muốn công khai tên chỉ tiêu hoặc kết quả cụ thể; không yêu cầu lại việc nhà máy đã thực hiện kiểm nghiệm và không yêu cầu lại hồ sơ nguyên liệu Postbiotic.
 4. Căn cứ cho claim cải thiện/cân bằng hệ vi sinh, điều tiết bã nhờn, củng cố hàng rào bảo vệ và hiệu quả `24 giờ`.
 5. Wording thống nhất về thời điểm dùng Spray: tóc còn ẩm, đã khô hay gần khô.
 6. Tài liệu nào được phép tải công khai và tài liệu nào chỉ được tóm tắt.
