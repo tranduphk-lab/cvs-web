@@ -67,7 +67,7 @@ Cavisi đã xác nhận `Bao bì Cavisi ok8.pdf` là bản in cuối, tiếp t�
 - `https://cavisi.vn/` đang được phục vụ bởi Vercel và đã triển khai các commit cập nhật ngày 15/09/2026.
 - Bản live đã hiển thị hotline `076 435 8668`, giá combo `359.000đ`, hướng dẫn Spray leave-on và dữ liệu sitemap ngày `2026-09-15`.
 - Hash các tài nguyên production đã được đối chiếu với nội dung commit tương ứng sau khi triển khai.
-- Chưa gửi sitemap/yêu cầu lập chỉ mục lại vì môi trường hiện tại không có phiên Google Search Console đã đăng nhập để thao tác.
+- Sitemap `https://cavisi.vn/sitemap.xml` đã được gửi trong Google Search Console ngày 15/09/2026; trạng thái `Thành công`, Google ghi nhận lần đọc cùng ngày và khám phá 8 trang tại thời điểm xác nhận.
 
 ### Dữ liệu và hồ sơ còn cần quản trị
 
@@ -97,6 +97,6 @@ Cavisi đã xác nhận `Bao bì Cavisi ok8.pdf` là bản in cuối, tiếp t�
 - [x] Xác nhận `cavisi.vn` đang chạy trên Vercel và production đã nhận bản cập nhật từ `main`.
 - [x] Commit và push bản local đã duyệt để kích hoạt deployment mới trên Vercel.
 - [x] Xác nhận production mới khớp nội dung commit và kiểm tra các dữ kiện trọng yếu.
-- [ ] Chỉ gửi sitemap/yêu cầu index lại sau khi production mới đã vượt kiểm tra.
+- [x] Gửi sitemap sau khi production mới vượt kiểm tra; Search Console báo `Thành công` và đã khám phá 8 trang ngày 15/09/2026.
 - [x] Chạy lại visual QA trên bản deploy ở mobile 375px và desktop; xác nhận không có overflow ngang toàn trang.
 - [ ] Kiểm tra tương tác keyboard focus và reduced motion trên trình duyệt tương tác khi có phiên phù hợp.
