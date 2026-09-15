@@ -12,6 +12,8 @@ Ngôn ngữ chính: tiếng Việt (`vi-VN`). Website cung cấp thông tin về
 - [Cavisi Shampoo 250ml](https://cavisi.vn/san-pham/shampoo/): Thành phần, công dụng mỹ phẩm, hướng dẫn và giá niêm yết được cung cấp.
 - [Cavisi Spray 30ml](https://cavisi.vn/san-pham/spray/): Xịt dưỡng leave-on, dùng khi tóc gần khô, không cần xả lại; có thông tin thành phần, hướng dẫn và giá niêm yết.
 - [Thương hiệu](https://cavisi.vn/thuong-hieu/): Triết lý Scalp-First Care, Science × Nature và nguyên tắc minh bạch.
+- [Kiến thức chăm sóc da đầu](https://cavisi.vn/kien-thuc/): Thư viện nội dung có nguồn tham khảo, phân biệt kiến thức khoa học nền với thông tin sản phẩm.
+- [Da đầu dễ bết khi đội mũ bảo hiểm](https://cavisi.vn/kien-thuc/da-dau-khi-doi-mu-bao-hiem/): Giải thích thận trọng về nhiệt, mồ hôi, cảm giác bết và cách chăm sóc; không khẳng định mũ trực tiếp gây gàu hay tăng tiết bã nhờn.
 - [Liên hệ](https://cavisi.vn/lien-he/): Hotline, Zalo, Facebook và email hỗ trợ sản phẩm.
 
 ## Tài liệu dành cho hệ thống AI

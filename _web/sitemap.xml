@@ -37,6 +37,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://cavisi.vn/kien-thuc/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cavisi.vn/kien-thuc/da-dau-khi-doi-mu-bao-hiem/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://cavisi.vn/lien-he/</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>

@@ -5,12 +5,12 @@ Website giới thiệu thương hiệu Cavisi với mục tiêu chính là tạo
 ## Chạy tại local
 
 ```powershell
-python -m http.server 4173 --directory D:\Cavisi_web\_web
+python -m http.server 4173 --directory D:\cvs-web\_web
 ```
 
 Mở `http://127.0.0.1:4173`.
 
-## Cấu trúc 7 trang
+## Cấu trúc website
 
 - `index.html`: Homepage định vị Scalp-first, vai trò Shampoo/Spray, cách dùng, nguyên tắc giao tiếp và FAQ.
 - `co-che/index.html`: Logic Scalp-first và sơ đồ trung tính về vai trò Shampoo - Spray.
@@ -18,6 +18,8 @@ Mở `http://127.0.0.1:4173`.
 - `san-pham/shampoo/index.html`: Chi tiết Cavisi Shampoo 250ml, bảng INCI, hoạt chất chính, quy trình gội.
 - `san-pham/spray/index.html`: Chi tiết Cavisi Spray 30ml, bảng INCI, Zinc PCA và trạng thái hướng dẫn sử dụng.
 - `thuong-hieu/index.html`: Câu chuyện thương hiệu, triết lý Science × Nature, nhà máy Butter-C.
+- `kien-thuc/index.html`: Hub bài viết kiến thức chăm sóc da đầu có nguồn tham khảo.
+- `kien-thuc/da-dau-khi-doi-mu-bao-hiem/index.html`: Bài kiến thức đầu tiên về nhiệt, mồ hôi và cảm giác bết khi thường xuyên đội mũ bảo hiểm.
 - `lien-he/index.html`: Kênh liên lạc trực tiếp (Hotline, Zalo, Email), nhà máy và form tư vấn trực tuyến.
 - `styles.css`: Hệ thống thiết kế typography Inter thanh lịch, responsive và motion.
 - `script.js`: Scroll reveal, sticky header, menu mobile, FAQ accordion và contact form.
