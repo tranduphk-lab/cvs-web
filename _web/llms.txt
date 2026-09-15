@@ -7,20 +7,20 @@ Ngôn ngữ chính: tiếng Việt (`vi-VN`). Website cung cấp thông tin về
 ## Trang chính
 
 - [Trang chủ](https://cavisi.vn/): Tổng quan thương hiệu, vấn đề da đầu, chu trình hai bước, sản phẩm và trạng thái bằng chứng.
-- [Cơ chế hai bước](https://cavisi.vn/co-che/): Giải thích vai trò rinse-off của Shampoo và leave-on của Spray.
+- [Cơ chế hai bước](https://cavisi.vn/co-che/): Giải thích vai trò làm sạch nền của Shampoo và chăm sóc tiếp nối của Spray.
 - [Danh mục sản phẩm](https://cavisi.vn/san-pham/): Tổng quan Cavisi Shampoo, Cavisi Spray và chu trình kết hợp.
 - [Cavisi Shampoo 250ml](https://cavisi.vn/san-pham/shampoo/): Thành phần, công dụng mỹ phẩm, hướng dẫn và giá niêm yết được cung cấp.
-- [Cavisi Spray 30ml](https://cavisi.vn/san-pham/spray/): Thành phần, công dụng mỹ phẩm, hướng dẫn và giá niêm yết được cung cấp.
+- [Cavisi Spray 30ml](https://cavisi.vn/san-pham/spray/): Xịt dưỡng leave-on, dùng khi tóc gần khô, không cần xả lại; có thông tin thành phần, hướng dẫn và giá niêm yết.
 - [Thương hiệu](https://cavisi.vn/thuong-hieu/): Triết lý Scalp-First Care, Science × Nature và nguyên tắc minh bạch.
 - [Liên hệ](https://cavisi.vn/lien-he/): Hotline, Zalo và email hỗ trợ sản phẩm.
 
 ## Tài liệu dành cho hệ thống AI
 
 - [Nội dung tổng hợp](https://cavisi.vn/llms-full.txt): Bản tóm lược có cấu trúc về thương hiệu, sản phẩm, cách dùng và giới hạn bằng chứng.
-- [Giá sản phẩm](https://cavisi.vn/pricing.txt): Giá niêm yết, dung tích và cách xác nhận giá hiện hành ở định dạng văn bản.
+- [Giá sản phẩm](https://cavisi.vn/pricing.txt): Giá niêm yết chính thức và dung tích của Shampoo, Spray và Combo ở định dạng văn bản.
 
 ## Liên hệ
 
-- Hotline: 0764 358 668
+- Hotline: 076 435 8668
 - Zalo: https://zalo.me/0764358668
 - Email: cskh.cvs@gmail.com

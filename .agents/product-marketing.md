@@ -3,11 +3,31 @@ brand: Cavisi
 website: https://cavisi.vn
 document_type: product_marketing_context
 language: vi-VN
+version: 1.1.1
+last_updated: 2026-09-15
 ---
 
 # Cavisi Product Marketing Context
 
 Tài liệu này là nguồn ngữ cảnh nền tảng cho các hoạt động marketing của Cavisi. Khi tạo nội dung, ưu tiên tính chính xác, minh bạch và nhất quán với triết lý chăm sóc da đầu của thương hiệu.
+
+## 0. Nguồn sự thật và dữ kiện thương mại đã chốt
+
+- **Nguồn ưu tiên cho thông tin sản phẩm:** hai tệp TTSP đã được xin cấp phép. Dùng các tệp này cho thành phần, công dụng, đối tượng, cách dùng, lưu ý và bảo quản.
+- **Nguồn bổ sung hành chính:** hai phiếu công bố đã tiếp nhận, chỉ dùng cho số tiếp nhận, ngày, nhà sản xuất và đơn vị chịu trách nhiệm khi TTSP không có trường tương ứng.
+- **Artwork chính thức:** `Bao bì Cavisi ok8.pdf` là bản cuối được phép in.
+- **Tên hiển thị:** `Cavisi Shampoo` và `Cavisi Spray`.
+- **Dung tích:** Cavisi Shampoo **250 ml**; Cavisi Spray **30 ml**.
+- **Giá niêm yết:** Shampoo **249.000 VNĐ**; Spray **149.000 VNĐ**; Combo **359.000 VNĐ**.
+- **Hotline hiển thị:** `076 435 8668`; liên kết gọi điện dùng `tel:0764358668`.
+- **Spray:** sản phẩm lưu lại trên da đầu, **không cần xả lại** sau khi dùng.
+- **Mã vạch:** hai mã trên artwork là mã chính thức nhưng không đưa lên website.
+- **Thông tin đơn vị chịu trách nhiệm:** đã biết Hộ kinh doanh Trần Đình Dư và địa chỉ, nhưng hiện chưa công khai trên website.
+- **Hạn sử dụng:** thể hiện theo thông tin in trên bao bì; không tự suy diễn hoặc bổ sung thời hạn còn thiếu cho Spray.
+- **Badge:** tiếp tục dùng `EU STANDARD` theo xác nhận của thương hiệu. Trước khi dùng badge như một bằng chứng/tiêu chuẩn độc lập trong nội dung, vẫn cần lưu hồ sơ chứng minh và quyền sử dụng.
+- **Hồ sơ nguyên liệu Postbiotic:** đã có giấy tờ hợp lệ cho nguyên liệu nhập khẩu từ châu Âu; coi nguồn gốc EU và phân loại nguyên liệu là dữ kiện đã xác nhận, không yêu cầu xác nhận lại.
+
+Giải thích “lưu hoạt chất trên da đầu lâu hơn, từ đó giúp hệ vi sinh da đầu được cải thiện” là cơ chế/claim do thương hiệu xác nhận. Hồ sơ nguyên liệu Postbiotic không tự chứng minh hiệu quả của thành phẩm; không trình bày đây là kết quả đã được chứng minh khi chưa có tài liệu khoa học hoặc kết quả thử nghiệm thành phẩm phù hợp.
 
 ## 1. Brand Core & Positioning
 
@@ -46,7 +66,7 @@ Quy trình Cavisi gồm hai bước bổ trợ nhau: **Cleanse** để làm sạ
 | Bước | Sản phẩm | Hoạt chất/công nghệ chính | Vai trò trong quy trình |
 | --- | --- | --- | --- |
 | 1. Cleanse | Shampoo | BHA, Climbazole, Hexamidine | Hỗ trợ làm sạch vảy gàu, dầu thừa và kiểm soát vi nấm liên quan đến gàu. |
-| 2. Care | Leave-on Spray | Postbiotic men vỏ liễu, Zinc PCA, vòi xịt nano | Hỗ trợ điều tiết bã nhờn, phân bổ dung dịch trên da đầu và củng cố màng bảo vệ trong 24 giờ. |
+| 2. Care | Cavisi Spray (leave-on) | Postbiotic men vỏ liễu, Zinc PCA, vòi xịt nano | Chăm sóc lưu lại và phân bổ dung dịch trên da đầu; các claim về bã nhờn, hàng rào bảo vệ, hệ vi sinh hoặc thời gian hiệu quả cần bằng chứng phù hợp. |
 | Trọn bộ | Combo Bộ đôi Cavisi | Shampoo + Leave-on Spray | Kết hợp hai bước làm sạch và chăm sóc để xây dựng chu trình Scalp-First Care hoàn chỉnh. |
 
 ### Bước 1 — Cleanse: Cavisi Shampoo
@@ -56,16 +76,16 @@ Quy trình Cavisi gồm hai bước bổ trợ nhau: **Cleanse** để làm sạ
 - **Hexamidine:** Hỗ trợ làm sạch và kiểm soát các yếu tố vi sinh trên da đầu.
 - **Vai trò chính:** Làm sạch nền da đầu, loại bỏ vảy gàu và chuẩn bị da đầu cho bước chăm sóc lưu lại.
 
-### Bước 2 — Care: Cavisi Leave-on Spray
+### Bước 2 — Care: Cavisi Spray
 
 - **Postbiotic men vỏ liễu:** Hỗ trợ chăm sóc và duy trì trạng thái cân bằng của da đầu.
 - **Zinc PCA:** Hỗ trợ điều tiết bã nhờn, phù hợp với da đầu dễ tiết dầu và bết dính.
 - **Vòi xịt nano:** Giúp đưa dung dịch tiếp xúc và phân bổ đều trên vùng da đầu cần chăm sóc.
-- **Vai trò chính:** Chăm sóc lưu lại, hỗ trợ cân bằng bã nhờn và củng cố màng bảo vệ da đầu trong 24 giờ.
+- **Vai trò chính:** Chăm sóc lưu lại trên da đầu, không cần xả lại. Các diễn giải về cân bằng bã nhờn, hàng rào bảo vệ, hệ vi sinh và hiệu quả `24 giờ` chỉ được công bố sau khi có căn cứ phù hợp.
 
 ### Combo Bộ đôi Cavisi
 
-Combo kết hợp **Cavisi Shampoo** và **Cavisi Leave-on Spray** thành quy trình hai bước:
+Combo kết hợp **Cavisi Shampoo** và **Cavisi Spray** thành quy trình hai bước:
 
 1. **Cleanse:** Làm sạch vảy gàu, dầu thừa và các yếu tố liên quan đến vi nấm.
 2. **Care:** Chăm sóc lưu lại để hỗ trợ điều tiết bã nhờn và củng cố màng bảo vệ da đầu.
@@ -106,7 +126,7 @@ Thông điệp trọng tâm của combo: hiệu quả chăm sóc da đầu đế
 4. Xả kỹ với nước, bảo đảm không còn sản phẩm lưu lại trên tóc và da đầu.
 5. Dùng theo tần suất ghi trên nhãn hoặc hướng dẫn chính thức của Cavisi.
 
-### Cavisi Leave-on Spray — Bước 2: Care
+### Cavisi Spray — Bước 2: Care
 
 1. Lắc đều chai trước khi sử dụng.
 2. Dùng sau khi tóc gần khô, chia tóc thành từng đường để lộ vùng da đầu cần chăm sóc.
@@ -129,3 +149,8 @@ Các hướng dẫn **lắc đều chai**, **dùng khi tóc gần khô** và **�
 - Không tự bổ sung nồng độ hoạt chất, kết quả thử nghiệm, số liệu hiệu quả, chứng nhận, giá bán, dung tích, số công bố hoặc danh sách INCI khi chưa có nguồn chính thức.
 - Nếu một dữ kiện chưa có trong tài liệu, đánh dấu là **cần xác minh** thay vì suy đoán.
 - Giữ nguyên thứ tự quy trình: **Bước 1 Cleanse (Shampoo) → Bước 2 Care (Leave-on Spray)**.
+
+## Changelog
+
+- **1.1.1 — 2026-09-15:** Ghi nhận hồ sơ hợp lệ của nguyên liệu Postbiotic nhập khẩu từ châu Âu; bỏ yêu cầu xác nhận lại nguồn gốc/phân loại nguyên liệu, nhưng tiếp tục tách hồ sơ nguyên liệu khỏi bằng chứng hiệu quả thành phẩm.
+- **1.1.0 — 2026-09-15:** Ghi nhận tên, dung tích, giá, hotline, artwork cuối, trạng thái leave-on, quy tắc mã vạch và thông tin đơn vị chịu trách nhiệm; tách claim hệ vi sinh, bã nhờn, hàng rào bảo vệ, `24 giờ` và `EU STANDARD` khỏi nhóm dữ kiện đã có bằng chứng.

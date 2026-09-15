@@ -1,0 +1,100 @@
+# Cavisi Website Brand Audit
+
+**Ngày audit:** 15/09/2026
+
+**Touchpoint:** `_web/` và `https://cavisi.vn/`
+
+**Cơ sở đối chiếu:** brand package trong `brand/`
+
+**Trạng thái:** Bản local đã đồng bộ dữ liệu cốt lõi; bản production trên Vercel vẫn là commit cũ và chưa chứa các cập nhật ngày 15/09/2026.
+
+## Brand health scorecard
+
+| Chiều đánh giá | Trước xử lý | Sau xử lý | Trạng thái |
+|---|---:|---:|---|
+| Positioning clarity | 4/5 | 4/5 | Strong |
+| Visual identity consistency | 3/5 | 3/5 | Developing |
+| Messaging consistency | 2/5 | 4/5 | Strong có điều kiện |
+| Voice & tone | 3/5 | 4/5 | Strong có điều kiện |
+| Audience alignment | 3/5 | 4/5 | Strong có điều kiện |
+| Competitive differentiation | 3/5 | 3/5 | Developing |
+| **Tổng** | **18/30** | **22/30** | **Nền tảng tốt, chưa production-ready** |
+
+Điểm sau xử lý đánh giá trạng thái code hiện tại, không phải phê duyệt pháp lý hoặc bằng chứng rằng website đang được deploy tại domain chính thức.
+
+## Sai lệch đã xử lý
+
+### P1 - Website công bố hướng dẫn và claim chưa được xác nhận
+
+Website từng lặp lại `leave-on`, `không cần xả lại`, hiệu quả `24 giờ`, claim hàng rào bảo vệ và hiệu quả microbiome trong nội dung hiển thị, metadata, structured data và tệp dành cho AI search.
+
+Đã thay bằng mô tả vai trò trung tính: Shampoo làm sạch nền; Spray chăm sóc lưu lại. Ngày 15/09/2026, website đã được đồng bộ với hướng dẫn Spray dùng khi tóc gần khô, xịt từ khoảng cách 10-15 cm, massage nhẹ và không cần xả lại.
+
+### P1 - Sơ đồ minh họa hoạt động như bằng chứng sản phẩm
+
+Hai raster cơ chế có chữ `cân bằng vi sinh 24h` và hình ảnh khoa học mô phỏng hiệu quả. Chúng đã được gỡ khỏi nội dung hiển thị và thay bằng flow HTML/CSS hai bước không đưa ra claim hiệu quả.
+
+### P1 - Before/After tạo khả năng hiểu nhầm
+
+Homepage từng đặt ảnh AI theo cấu trúc trạng thái trước/sau dù có disclaimer. Khối này đã được thay bằng ba bối cảnh nhu cầu và câu hỏi người dùng, không trình bày kết quả sản phẩm.
+
+### P2 - Messaging thiên về thuật ngữ hơn khả năng hiểu
+
+Các cụm `bọt vi sinh`, `nước vi sinh`, `hệ vi sinh khỏe mạnh` và ngôn ngữ tương tự đã được đổi thành mô tả quan sát được hoặc mô tả thành phần có giới hạn.
+
+### P2 - Metadata và nội dung máy đọc lệch brand package
+
+Meta description, Open Graph, Twitter, JSON-LD, `llms.txt`, `llms-full.txt` và `_web/README.md` đã được đồng bộ với vai trò hai bước và trạng thái bằng chứng hiện tại.
+
+## Những gì đang hoạt động tốt
+
+- Homepage đưa Scalp-first và hệ hai bước xuất hiện sớm, đúng cấu trúc messaging của brand package.
+- Shampoo và Spray có vai trò riêng, nhưng vẫn nằm trong một Branded House duy nhất.
+- CTA ưu tiên tìm hiểu vấn đề, cơ chế và sản phẩm; website không dùng countdown hoặc popup ép mua.
+- Hệ màu Science Blue, Fresh Aqua, nền ấm và cặp Clash Display/Inter nhìn chung khớp identity đã khai báo.
+- Website có reduced-motion CSS, semantic headings, alt text và nhãn điều khiển cho các tương tác chính.
+
+## Blocker trước production
+
+### Badge trên artwork chưa có hồ sơ chứng minh
+
+Nhiều ảnh packshot và lifestyle hiển thị trực tiếp badge `EU Standard` và dòng `European-Grade Postbiotic Ingredient`. Không chỉnh sửa hoặc che badge bằng CSS vì việc đó sẽ tạo artwork giả và không giải quyết nguồn gốc pháp lý.
+
+Cavisi đã xác nhận `Bao bì Cavisi ok8.pdf` là bản in cuối, tiếp tục dùng badge và nguyên liệu Postbiotic nhập khẩu từ châu Âu có giấy tờ hợp lệ. Website có thể nêu đúng nguồn gốc nguyên liệu, nhưng chưa nên diễn giải badge thành chứng nhận EU của toàn bộ thành phẩm nếu không có hồ sơ riêng cho badge.
+
+### Bản cập nhật chưa được triển khai lên production
+
+- `https://cavisi.vn/` đang được phục vụ bởi Vercel và khớp chính xác với commit `b9f5020` trên nhánh `main`.
+- Các thay đổi đã xác nhận hiện còn ở worktree, chưa có trong `origin/main`; vì vậy Vercel chưa thể triển khai bản mới.
+- Bản live vẫn còn định dạng hotline `0764 358 668`, giá gạch `398.000đ` và dữ liệu sitemap ngày `2026-09-14`.
+- Chưa gửi yêu cầu lập chỉ mục lại cho Google khi production chưa đồng bộ.
+
+### Dữ liệu và hồ sơ còn cần quản trị
+
+- Quyết định khi nào công khai pháp nhân chịu trách nhiệm và địa chỉ; hiện tại chưa công khai Hộ kinh doanh Trần Đình Dư.
+- Quyền sở hữu Zalo/email và nơi mua chính thức.
+- TCCS, COA/kiểm nghiệm và căn cứ cho claim microbiome, bã nhờn, hàng rào bảo vệ, `24 giờ`.
+- Quyền sử dụng và trạng thái AI/composite của từng asset.
+
+## Kiểm tra đã thực hiện
+
+- Quét toàn bộ HTML/TXT/README để loại các cụm claim đang bị chặn.
+- Parse toàn bộ HTML và kiểm tra liên kết/asset nội bộ.
+- Kiểm tra `git diff --check`.
+- Render headless homepage ở `1440px` và `375px`, trang Spray ở `1440px`, trang Liên hệ ở `375px`.
+- Đối chiếu layout, navigation, CTA và text wrapping ở các viewport đại diện.
+- Kiểm tra HTTP production: các URL chính trả `200`, HTTP chuyển sang HTTPS bằng `308`, và `www` chuyển về non-www bằng `307`.
+- So sánh SHA-256 giữa production, commit `b9f5020` và worktree: production khớp commit ở toàn bộ HTML/TXT/XML được kiểm tra nhưng khác bản local mới; riêng `robots.txt` không thay đổi.
+- Kiểm tra production không có `X-Robots-Tag: noindex`; canonical và robots hiện không tạo blocker crawl rõ ràng.
+- Ghi nhận Vercel đang trả `application/octet-stream` cho `sitemap.xml` và các tệp TXT; bản local đã bổ sung `_web/vercel.json` để đặt MIME chuẩn trong lần triển khai tiếp theo.
+
+## Điều kiện hoàn tất vòng production
+
+- [ ] Lưu hồ sơ chứng minh/quyền sử dụng badge `EU STANDARD`.
+- [x] Đồng bộ website với tên, dung tích, giá, hotline, phiếu công bố, nguồn gốc nguyên liệu Postbiotic và hướng dẫn Spray đã xác nhận.
+- [ ] Bổ sung TCCS, kiểm nghiệm và hồ sơ claim trước khi mở rộng nội dung khoa học.
+- [x] Xác nhận `cavisi.vn` đang chạy trên Vercel và production hiện khớp commit `b9f5020` của `main`.
+- [ ] Commit và push bản local đã duyệt để kích hoạt deployment mới trên Vercel.
+- [ ] Xác nhận production mới khớp bản local bằng hash và kiểm tra nội dung trọng yếu.
+- [ ] Chỉ gửi sitemap/yêu cầu index lại sau khi production mới đã vượt kiểm tra.
+- [ ] Chạy lại visual QA trên bản deploy, gồm mobile 375px, desktop, keyboard focus và reduced motion.

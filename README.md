@@ -19,7 +19,7 @@ Truy cập: `http://localhost:3000`
   - `co-che/`: Khoa học cơ chế 2 bước, sơ đồ 3D y khoa, Postbiotic men vỏ liễu
   - `san-pham/`: Danh mục sản phẩm Cavisi Microbiome Care
   - `san-pham/shampoo/`: Chi tiết Cavisi Shampoo 250ml, bảng INCI, quy trình gội chuẩn
-  - `san-pham/spray/`: Chi tiết Cavisi Spray 30ml, bảng INCI, màng bảo vệ vi sinh 24h
+  - `san-pham/spray/`: Chi tiết Cavisi Spray 30ml, bảng INCI và hướng dẫn dùng leave-on đã xác nhận
   - `thuong-hieu/`: Triết lý thương hiệu, nhà máy sản xuất Butter-C
   - `lien-he/`: Kênh liên hệ, chính sách đổi trả, hotline, Zalo và form đặt hàng
   - `styles.css`: Hệ thống thiết kế chuẩn Dược Mỹ phẩm, font Inter tinh giản, responsive hoàn hảo
@@ -41,7 +41,7 @@ Truy cập: `http://localhost:3000`
 
 ## 📞 Kênh liên hệ & Hỗ trợ
 
-- **Hotline:** 0764 358 668
+- **Hotline:** 076 435 8668
 - **Zalo:** [https://zalo.me/0764358668](https://zalo.me/0764358668)
 - **Email:** cskh.cvs@gmail.com
 - **Nhà máy sản xuất:** Công ty CP Dược Mỹ phẩm Butter - C (Hà Nội)

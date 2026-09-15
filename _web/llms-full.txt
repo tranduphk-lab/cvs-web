@@ -1,6 +1,6 @@
 # Cavisi: thông tin thương hiệu và sản phẩm
 
-Cập nhật: 2026-09-14
+Cập nhật: 2026-09-15
 Ngôn ngữ: vi-VN
 Website chính thức: https://cavisi.vn/
 Dữ liệu giá dạng văn bản: https://cavisi.vn/pricing.txt
@@ -18,7 +18,7 @@ Khí hậu nóng ẩm, mồ hôi, dầu thừa, cặn bẩn và thói quen độ
 ## Chu trình Scalp-First Care hai bước
 
 1. Cleanse với Cavisi Shampoo: làm sạch tóc, da đầu, dầu thừa và vảy gàu. Đây là sản phẩm rinse-off, được xả sạch sau khi sử dụng.
-2. Care với Cavisi Spray: chăm sóc lưu lại trên da đầu. Đây là sản phẩm leave-on, không cần xả lại và được mô tả trong phạm vi hỗ trợ củng cố hàng rào bảo vệ da đầu trong 24 giờ.
+2. Care với Cavisi Spray: bước chăm sóc leave-on sau Shampoo. Dùng khi tóc gần khô, xịt trực tiếp và phân bổ đều trên da đầu từ khoảng cách 10-15 cm, massage nhẹ và không xả lại.
 
 Hai sản phẩm có vai trò bổ trợ nhưng không được mô tả như phương pháp điều trị hoặc bảo đảm kết quả cho mọi người.
 
@@ -26,14 +26,14 @@ Hai sản phẩm có vai trò bổ trợ nhưng không được mô tả như ph
 
 URL: https://cavisi.vn/san-pham/shampoo/
 
-Cavisi Shampoo là dầu gội làm sạch nền da đầu. Sản phẩm giúp làm sạch tóc, da đầu, dầu thừa và vảy gàu, đồng thời chuẩn bị cho bước chăm sóc leave-on.
+Cavisi Shampoo là dầu gội làm sạch nền da đầu. Sản phẩm giúp làm sạch tóc, da đầu, dầu thừa và vảy gàu, đồng thời chuẩn bị cho bước chăm sóc tiếp nối.
 
 Thành phần nổi bật được công khai trên trang sản phẩm:
 
 - Salicylic Acid: hỗ trợ làm sạch tế bào chết, dầu thừa và vảy tích tụ trên bề mặt da đầu.
 - Climbazole: hỗ trợ kiểm soát vi nấm Malassezia, một yếu tố có liên quan đến gàu.
 - Hexamidine Diisethionate: hỗ trợ làm sạch và kiểm soát các yếu tố vi sinh trên da đầu.
-- Lactobacillus/Salix Purpurea Bark Ferment Extract: thành phần lên men dùng trong định hướng hỗ trợ chăm sóc da đầu.
+- Lactobacillus/Salix Purpurea Bark Ferment Extract: nằm trong nguyên liệu Postbiotic nhập khẩu từ châu Âu và có giấy tờ hợp lệ. Hồ sơ nguyên liệu không thay thế bằng chứng hiệu quả thành phẩm.
 
 Hướng dẫn cơ bản:
 
@@ -43,17 +43,17 @@ Hướng dẫn cơ bản:
 4. Xả kỹ với nước.
 5. Dùng theo tần suất ghi trên nhãn hoặc hướng dẫn chính thức của Cavisi.
 
-Giá niêm yết được thương hiệu cung cấp: 249.000 VND cho chai 250ml. Số tiếp nhận được cung cấp: 28338/26/CBMP-HN. Bản phiếu công bố gốc chưa có trong bộ tài liệu website để đối chiếu độc lập.
+Giá niêm yết chính thức: 249.000 VND cho chai 250ml. Số tiếp nhận phiếu công bố: 28338/26/CBMP-HN; bản phiếu đã được đối chiếu trong bộ nguồn nội bộ.
 
 ## Cavisi Spray 30ml
 
 URL: https://cavisi.vn/san-pham/spray/
 
-Cavisi Spray là xịt dưỡng leave-on dùng sau bước làm sạch. Sản phẩm có thành phần lên men vỏ liễu và Zinc PCA, hỗ trợ điều tiết bã nhờn, chăm sóc và củng cố hàng rào bảo vệ da đầu trong 24 giờ.
+Cavisi Spray là xịt dưỡng da đầu ở bước chăm sóc tiếp nối. Sản phẩm có thành phần lên men vỏ liễu và Zinc PCA; sự hiện diện của các thành phần không mặc định chứng minh hiệu quả microbiome hoặc hiệu quả thành phẩm.
 
 Thành phần nổi bật được công khai trên trang sản phẩm:
 
-- Lactobacillus/Salix Purpurea Bark Ferment Extract: thành phần lên men dùng trong định hướng hỗ trợ chăm sóc và duy trì trạng thái cân bằng của da đầu.
+- Lactobacillus/Salix Purpurea Bark Ferment Extract: nằm trong nguyên liệu Postbiotic nhập khẩu từ châu Âu và có giấy tờ hợp lệ. Hồ sơ nguyên liệu không tự chứng minh hiệu quả microbiome của thành phẩm.
 - Zinc PCA: hỗ trợ điều tiết bã nhờn, phù hợp với da đầu dễ tiết dầu và bết dính.
 - O-Cymen-5-Ol và Rosmarinus Officinalis Essential Oil có trong danh sách INCI công khai của sản phẩm.
 
@@ -66,11 +66,15 @@ Hướng dẫn cơ bản:
 5. Không xả lại.
 6. Dùng theo liều lượng và tần suất ghi trên nhãn hoặc hướng dẫn chính thức của Cavisi.
 
-Giá niêm yết được thương hiệu cung cấp: 149.000 VND cho chai 30ml. Số tiếp nhận được cung cấp: 28222/26/CBMP-HN. Bản phiếu công bố gốc chưa có trong bộ tài liệu website để đối chiếu độc lập.
+Giá niêm yết chính thức: 149.000 VND cho chai 30ml. Số tiếp nhận phiếu công bố: 28222/26/CBMP-HN; bản phiếu đã được đối chiếu trong bộ nguồn nội bộ.
+
+## Combo Bộ Đôi Cavisi
+
+Combo gồm Cavisi Shampoo 250ml và Cavisi Spray 30ml, có giá niêm yết chính thức 359.000 VND.
 
 ## Trạng thái bằng chứng và giới hạn
 
-Cavisi công khai danh sách INCI và hai số tiếp nhận do thương hiệu cung cấp. Tại thời điểm cập nhật, bộ nguồn website chưa có bản phiếu công bố hoàn chỉnh, TCCS, COA, kết quả kiểm nghiệm thành phẩm hoặc hồ sơ chứng nhận nhà máy để đối chiếu độc lập.
+Cavisi đã có hai TTSP được chỉ định làm nguồn ưu tiên cho thông tin sản phẩm, hai phiếu công bố đã tiếp nhận, artwork cuối và hồ sơ hợp lệ cho nguyên liệu Postbiotic nhập khẩu từ châu Âu. Tại thời điểm cập nhật, bộ nguồn vẫn chưa có TCCS, COA, kết quả kiểm nghiệm thành phẩm hoặc hồ sơ riêng để diễn giải badge EU STANDARD như chứng nhận của toàn bộ thành phẩm.
 
 Hình ảnh chiến dịch và hình mô phỏng trên website là hình minh họa. Chúng không phải ảnh trước-sau hoặc bằng chứng về hiệu quả sản phẩm. Trải nghiệm có thể khác nhau ở mỗi người.
 
@@ -83,6 +87,6 @@ Chỉ dùng ngoài da và tránh tiếp xúc trực tiếp với mắt. Ngưng s
 ## Liên hệ hỗ trợ
 
 - Trang liên hệ: https://cavisi.vn/lien-he/
-- Hotline: 0764 358 668
+- Hotline: 076 435 8668
 - Zalo: https://zalo.me/0764358668
 - Email: cskh.cvs@gmail.com
