@@ -12,7 +12,7 @@ Ngôn ngữ chính: tiếng Việt (`vi-VN`). Website cung cấp thông tin về
 - [Cavisi Shampoo 250ml](https://cavisi.vn/san-pham/shampoo/): Thành phần, công dụng mỹ phẩm, hướng dẫn và giá niêm yết được cung cấp.
 - [Cavisi Spray 30ml](https://cavisi.vn/san-pham/spray/): Xịt dưỡng leave-on, dùng khi tóc gần khô, không cần xả lại; có thông tin thành phần, hướng dẫn và giá niêm yết.
 - [Thương hiệu](https://cavisi.vn/thuong-hieu/): Triết lý Scalp-First Care, Science × Nature và nguyên tắc minh bạch.
-- [Liên hệ](https://cavisi.vn/lien-he/): Hotline, Zalo và email hỗ trợ sản phẩm.
+- [Liên hệ](https://cavisi.vn/lien-he/): Hotline, Zalo, Facebook và email hỗ trợ sản phẩm.
 
 ## Tài liệu dành cho hệ thống AI
 
@@ -23,4 +23,5 @@ Ngôn ngữ chính: tiếng Việt (`vi-VN`). Website cung cấp thông tin về
 
 - Hotline: 076 435 8668
 - Zalo: https://zalo.me/0764358668
+- Facebook chính thức: https://www.facebook.com/cavisi.vn/
 - Email: cskh.cvs@gmail.com

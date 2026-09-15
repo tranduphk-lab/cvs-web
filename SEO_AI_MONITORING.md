@@ -8,6 +8,7 @@ Cập nhật: 2026-09-15
 - Ngày gửi và lần đọc gần nhất: 15/09/2026
 - Trạng thái Search Console: `Thành công`
 - Số trang được khám phá tại thời điểm ghi nhận: 8
+- Facebook chính thức dùng làm tín hiệu thực thể: `https://www.facebook.com/cavisi.vn/`
 - Kiểm tra lại trạng thái index lần đầu: trong khoảng 18-22/09/2026
 - Ngưỡng xử lý nếu URL chính chưa được index: 29/09/2026
 

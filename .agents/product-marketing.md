@@ -3,7 +3,7 @@ brand: Cavisi
 website: https://cavisi.vn
 document_type: product_marketing_context
 language: vi-VN
-version: 1.1.1
+version: 1.1.2
 last_updated: 2026-09-15
 ---
 
@@ -20,6 +20,7 @@ Tài liệu này là nguồn ngữ cảnh nền tảng cho các hoạt động m
 - **Dung tích:** Cavisi Shampoo **250 ml**; Cavisi Spray **30 ml**.
 - **Giá niêm yết:** Shampoo **249.000 VNĐ**; Spray **149.000 VNĐ**; Combo **359.000 VNĐ**.
 - **Hotline hiển thị:** `076 435 8668`; liên kết gọi điện dùng `tel:0764358668`.
+- **Facebook chính thức:** `https://www.facebook.com/cavisi.vn/`.
 - **Spray:** sản phẩm lưu lại trên da đầu, **không cần xả lại** sau khi dùng.
 - **Mã vạch:** hai mã trên artwork là mã chính thức nhưng không đưa lên website.
 - **Thông tin đơn vị chịu trách nhiệm:** đã biết Hộ kinh doanh Trần Đình Dư và địa chỉ, nhưng hiện chưa công khai trên website.
@@ -152,5 +153,6 @@ Các hướng dẫn **lắc đều chai**, **dùng khi tóc gần khô** và **�
 
 ## Changelog
 
+- **1.1.2 — 2026-09-15:** Ghi nhận fanpage Facebook chính thức của Cavisi để đồng bộ website, structured data và hồ sơ thực thể.
 - **1.1.1 — 2026-09-15:** Ghi nhận hồ sơ hợp lệ của nguyên liệu Postbiotic nhập khẩu từ châu Âu; bỏ yêu cầu xác nhận lại nguồn gốc/phân loại nguyên liệu, nhưng tiếp tục tách hồ sơ nguyên liệu khỏi bằng chứng hiệu quả thành phẩm.
 - **1.1.0 — 2026-09-15:** Ghi nhận tên, dung tích, giá, hotline, artwork cuối, trạng thái leave-on, quy tắc mã vạch và thông tin đơn vị chịu trách nhiệm; tách claim hệ vi sinh, bã nhờn, hàng rào bảo vệ, `24 giờ` và `EU STANDARD` khỏi nhóm dữ kiện đã có bằng chứng.

@@ -68,11 +68,12 @@ Cavisi đã xác nhận `Bao bì Cavisi ok8.pdf` là bản in cuối, tiếp t�
 - Bản live đã hiển thị hotline `076 435 8668`, giá combo `359.000đ`, hướng dẫn Spray leave-on và dữ liệu sitemap ngày `2026-09-15`.
 - Hash các tài nguyên production đã được đối chiếu với nội dung commit tương ứng sau khi triển khai.
 - Sitemap `https://cavisi.vn/sitemap.xml` đã được gửi trong Google Search Console ngày 15/09/2026; trạng thái `Thành công`, Google ghi nhận lần đọc cùng ngày và khám phá 8 trang tại thời điểm xác nhận.
+- Fanpage `https://www.facebook.com/cavisi.vn/` đã được xác nhận là Facebook chính thức và được đồng bộ vào Organization Schema, footer và các tệp máy đọc.
 
 ### Dữ liệu và hồ sơ còn cần quản trị
 
 - Quyết định khi nào công khai pháp nhân chịu trách nhiệm và địa chỉ; hiện tại chưa công khai Hộ kinh doanh Trần Đình Dư.
-- Quyền sở hữu Zalo/email và nơi mua chính thức.
+- Quyền sở hữu Zalo/email và nơi mua chính thức; Facebook đã được xác nhận.
 - TCCS, COA/kiểm nghiệm và căn cứ cho claim microbiome, bã nhờn, hàng rào bảo vệ, `24 giờ`.
 - Quyền sử dụng và trạng thái AI/composite của từng asset.
 

@@ -267,7 +267,7 @@ Không nên tạo badge `Đã kiểm nghiệm`, `Đạt chuẩn EU`, `Clinical`,
 | Spray | Công thức, cách dùng, lưu ý là gì? | TTSP, phiếu công bố, artwork cuối; leave-on đã xác nhận | TCCS, kiểm nghiệm và hồ sơ claim hệ vi sinh/bã nhờn/hàng rào bảo vệ |
 | Bằng chứng | Cavisi dựa trên nguồn nào? | Có thể công khai trạng thái tài liệu | Tất cả hồ sơ P0/P1 quan trọng |
 | Thương hiệu | Ai đứng sau và nguyên tắc làm việc là gì? | Brand Guideline | Pháp nhân, founder/đội ngũ, quy trình trách nhiệm |
-| Liên hệ | Kênh nào là chính thức? | Hotline chuẩn `076 435 8668`; email/fanpage trên artwork | Xác nhận quyền sở hữu Zalo/email và chính sách hỗ trợ; chưa công khai địa chỉ HKD |
+| Liên hệ | Kênh nào là chính thức? | Hotline chuẩn `076 435 8668`; Facebook chính thức `https://www.facebook.com/cavisi.vn/`; email/fanpage trên artwork | Xác nhận quyền sở hữu Zalo/email và chính sách hỗ trợ; chưa công khai địa chỉ HKD |
 
 ---
 
