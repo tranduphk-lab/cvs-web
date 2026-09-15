@@ -21,6 +21,7 @@ Mở `http://127.0.0.1:4173`.
 - `kien-thuc/index.html`: Hub bài viết kiến thức chăm sóc da đầu có nguồn tham khảo.
 - `kien-thuc/da-dau-khi-doi-mu-bao-hiem/index.html`: Bài kiến thức đầu tiên về nhiệt, mồ hôi và cảm giác bết khi thường xuyên đội mũ bảo hiểm.
 - `kien-thuc/gau-la-gi-vi-sao-de-quay-lai/index.html`: Bài giải thích có nguồn về gàu, cơ chế nhiều yếu tố, tính tái diễn và cách chăm sóc thông thường.
+- `kien-thuc/da-dau-dau-toc-nhanh-bet-du-moi-goi/index.html`: Bài giải thích về bã nhờn, mồ hôi, tóc nhanh bết và cách chọn tần suất gội.
 - `bang-chung/index.html`: Trạng thái hồ sơ, thứ bậc nguồn và ranh giới bằng chứng của thông tin Cavisi.
 - `lien-he/index.html`: Kênh liên lạc trực tiếp (Hotline, Zalo, Email), nhà máy và form tư vấn trực tuyến.
 - `styles.css`: Hệ thống thiết kế typography Inter thanh lịch, responsive và motion.

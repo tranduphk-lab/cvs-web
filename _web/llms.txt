@@ -15,6 +15,7 @@ Ngôn ngữ chính: tiếng Việt (`vi-VN`). Website cung cấp thông tin về
 - [Kiến thức chăm sóc da đầu](https://cavisi.vn/kien-thuc/): Thư viện nội dung có nguồn tham khảo, phân biệt kiến thức khoa học nền với thông tin sản phẩm.
 - [Da đầu dễ bết khi đội mũ bảo hiểm](https://cavisi.vn/kien-thuc/da-dau-khi-doi-mu-bao-hiem/): Giải thích thận trọng về nhiệt, mồ hôi, cảm giác bết và cách chăm sóc; không khẳng định mũ trực tiếp gây gàu hay tăng tiết bã nhờn.
 - [Gàu là gì? Vì sao gàu dễ quay lại?](https://cavisi.vn/kien-thuc/gau-la-gi-vi-sao-de-quay-lai/): Giải thích gàu là tình trạng nhiều yếu tố, lý do có thể tái diễn, cách chăm sóc thông thường và dấu hiệu nên gặp bác sĩ.
+- [Da đầu dầu: vì sao tóc nhanh bết dù mới gội?](https://cavisi.vn/kien-thuc/da-dau-dau-toc-nhanh-bet-du-moi-goi/): Phân biệt bã nhờn với mồ hôi, giải thích các yếu tố khiến tóc nhanh bết, tần suất gội và hiểu lầm về “tiết dầu bù”.
 - [Bằng chứng và minh bạch](https://cavisi.vn/bang-chung/): Nguồn dùng cho thông tin sản phẩm, trạng thái hồ sơ và ranh giới giữa dữ liệu thành phẩm, hồ sơ nguyên liệu và kiến thức khoa học nền.
 - [Liên hệ](https://cavisi.vn/lien-he/): Hotline, Zalo, Facebook và email hỗ trợ sản phẩm.
 

@@ -823,7 +823,7 @@ body.modal-open{overflow:hidden}
 .featured-reading .section-intro h2{min-width:0;overflow-wrap:anywhere}
 .featured-article-copy h2 a:hover{color:var(--blue)}
 .featured-article-copy .text-link{margin-top:14px;align-self:flex-start}
-.article-library{max-width:1240px;margin:28px auto 0}
+.article-library{display:grid;gap:18px;max-width:1240px;margin:28px auto 0}
 .article-card{display:grid;grid-template-columns:minmax(260px,.7fr) minmax(0,1.3fr);border:1px solid var(--line);background:#fff}
 .article-card-media{min-height:280px;overflow:hidden;background:var(--mist)}
 .article-card-media img{width:100%;height:100%;object-fit:cover;transition:transform .65s cubic-bezier(.2,1,.3,1)}
@@ -870,6 +870,10 @@ body.modal-open{overflow:hidden}
 .factor-grid span{color:var(--aqua-text);font-size:12px;font-weight:800}
 .factor-grid h3{margin:18px 0 8px}
 .factor-grid p{font-size:15px;margin:0}
+.article-compare{display:grid;grid-template-columns:1fr 1fr;margin:28px 0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.article-compare>div{padding:28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.article-compare strong{display:block;margin-bottom:10px;color:var(--blue);font-size:20px}
+.article-compare p{margin:0;font-size:15px}
 .evidence-note{margin:34px 0;padding:24px 28px;border-left:4px solid var(--aqua);background:var(--mist)}
 .evidence-note strong{display:block;margin-bottom:8px;color:var(--blue);font-size:14px;text-transform:uppercase;letter-spacing:.05em}
 .evidence-note p{margin-bottom:0;font-size:15px}
@@ -929,6 +933,7 @@ body.modal-open{overflow:hidden}
   .care-steps li{grid-template-columns:38px 1fr;gap:10px}
   .article-product-grid{grid-template-columns:1fr}
   .factor-grid{grid-template-columns:1fr}
+  .article-compare{grid-template-columns:1fr}
   .article-card-media{min-height:260px}
 }
 

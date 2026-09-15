@@ -9,14 +9,14 @@ Cập nhật: 2026-09-15
 - Trạng thái Search Console: `Thành công`
 - Số trang được khám phá tại thời điểm ghi nhận: 8
 - Facebook chính thức dùng làm tín hiệu thực thể: `https://www.facebook.com/cavisi.vn/`
-- Hub kiến thức và hai bài đã được xuất bản: `/kien-thuc/`, `/kien-thuc/da-dau-khi-doi-mu-bao-hiem/` và `/kien-thuc/gau-la-gi-vi-sao-de-quay-lai/`.
+- Hub kiến thức và ba bài đã được chuẩn bị: `/kien-thuc/`, `/kien-thuc/da-dau-khi-doi-mu-bao-hiem/`, `/kien-thuc/gau-la-gi-vi-sao-de-quay-lai/` và `/kien-thuc/da-dau-dau-toc-nhanh-bet-du-moi-goi/`. Bài về da đầu dầu chỉ chuyển sang trạng thái đã xuất bản sau khi được duyệt và triển khai.
 - Trang minh bạch bằng chứng đã được xuất bản tại `/bang-chung/`.
 - Kiểm tra lại trạng thái index lần đầu: trong khoảng 18-22/09/2026
 - Ngưỡng xử lý nếu URL chính chưa được index: 29/09/2026
 
 ## Mục tiêu
 
-- Theo dõi khả năng thu thập, lập chỉ mục và hiển thị của 11 URL HTML đã xuất bản.
+- Theo dõi 11 URL HTML đã xuất bản và bổ sung bài về da đầu dầu thành URL thứ 12 sau khi triển khai.
 - Đo xu hướng truy vấn thương hiệu, sản phẩm và nhu cầu chăm sóc da đầu.
 - Đo tỷ lệ Cavisi được nhắc đến hoặc trích dẫn trong câu trả lời AI theo thời gian.
 - Không xem một lần kiểm tra AI riêng lẻ là kết luận vì câu trả lời có tính biến động.
@@ -36,6 +36,8 @@ Cập nhật: 2026-09-15
 11. Zinc PCA cho da đầu dầu
 12. Malassezia liên quan đến gàu như thế nào
 13. gàu là gì và vì sao gàu dễ quay lại
+14. vì sao tóc nhanh bết dù mới gội
+15. gội đầu nhiều có làm da đầu tiết dầu hơn không
 
 ## Theo dõi hàng tuần trong 8 tuần đầu sau triển khai
 
