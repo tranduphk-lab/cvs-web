@@ -86,7 +86,7 @@ Cavisi đã xác nhận `Bao bì Cavisi ok8.pdf` là bản in cuối, tiếp t�
 - Kiểm tra HTTP production: các URL chính trả `200`, HTTP chuyển sang HTTPS bằng `308`, và `www` chuyển về non-www bằng `307`.
 - So sánh SHA-256 giữa production, commit `b9f5020` và worktree: production khớp commit ở toàn bộ HTML/TXT/XML được kiểm tra nhưng khác bản local mới; riêng `robots.txt` không thay đổi.
 - Kiểm tra production không có `X-Robots-Tag: noindex`; canonical và robots hiện không tạo blocker crawl rõ ràng.
-- Ghi nhận Vercel đang trả `application/octet-stream` cho `sitemap.xml` và các tệp TXT; bản local đã bổ sung `_web/vercel.json` để đặt MIME chuẩn trong lần triển khai tiếp theo.
+- Ghi nhận Vercel đang trả `application/octet-stream` cho `sitemap.xml` và các tệp TXT; repository đã bổ sung `vercel.json` tại project root để đặt MIME chuẩn.
 
 ## Điều kiện hoàn tất vòng production
 
